@@ -1,0 +1,627 @@
+id,where,what,paper_value,source_key,judge,format
+N001,Table I,"LoCoMo, multi-hop: single lookup accuracy (%)",59.4,PT:locomo/multi-hop/judge1/systems/single_lookup/accuracy,primary,pct1
+N002,Table I,"LoCoMo, multi-hop: single lookup memory tokens","6,072",PT:locomo/multi-hop/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N003,Table I,"LoCoMo, multi-hop: planned read accuracy (%)",41.6,PT:locomo/multi-hop/judge1/systems/planned_read/accuracy,primary,pct1
+N004,Table I,"LoCoMo, multi-hop: planned read memory tokens","2,352",PT:locomo/multi-hop/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N005,Table I,"LoCoMo, multi-hop: iterative search accuracy (%)",54.8,PT:locomo/multi-hop/judge1/systems/iterative_search/accuracy,primary,pct1
+N006,Table I,"LoCoMo, multi-hop: iterative search memory tokens","11,523",PT:locomo/multi-hop/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N007,Table I,"LoCoMo, multi-hop: questions",281,PT:locomo/multi-hop/n_questions,-,int
+N008,Table I,"LoCoMo, temporal: single lookup accuracy (%)",84.6,PT:locomo/temporal/judge1/systems/single_lookup/accuracy,primary,pct1
+N009,Table I,"LoCoMo, temporal: single lookup memory tokens","6,098",PT:locomo/temporal/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N010,Table I,"LoCoMo, temporal: planned read accuracy (%)",79.9,PT:locomo/temporal/judge1/systems/planned_read/accuracy,primary,pct1
+N011,Table I,"LoCoMo, temporal: planned read memory tokens","2,459",PT:locomo/temporal/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N012,Table I,"LoCoMo, temporal: iterative search accuracy (%)",83.7,PT:locomo/temporal/judge1/systems/iterative_search/accuracy,primary,pct1
+N013,Table I,"LoCoMo, temporal: iterative search memory tokens","6,729",PT:locomo/temporal/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N014,Table I,"LoCoMo, temporal: questions",319,PT:locomo/temporal/n_questions,-,int
+N015,Table I,"LoCoMo, open-domain: single lookup accuracy (%)",54.2,PT:locomo/open-domain/judge1/systems/single_lookup/accuracy,primary,pct1
+N016,Table I,"LoCoMo, open-domain: single lookup memory tokens","6,086",PT:locomo/open-domain/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N017,Table I,"LoCoMo, open-domain: planned read accuracy (%)",45.8,PT:locomo/open-domain/judge1/systems/planned_read/accuracy,primary,pct1
+N018,Table I,"LoCoMo, open-domain: planned read memory tokens","2,344",PT:locomo/open-domain/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N019,Table I,"LoCoMo, open-domain: iterative search accuracy (%)",49.0,PT:locomo/open-domain/judge1/systems/iterative_search/accuracy,primary,pct1
+N020,Table I,"LoCoMo, open-domain: iterative search memory tokens","12,850",PT:locomo/open-domain/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N021,Table I,"LoCoMo, open-domain: questions",96,PT:locomo/open-domain/n_questions,-,int
+N022,Table I,"LoCoMo, single-hop: single lookup accuracy (%)",83.4,PT:locomo/single-hop/judge1/systems/single_lookup/accuracy,primary,pct1
+N023,Table I,"LoCoMo, single-hop: single lookup memory tokens","6,092",PT:locomo/single-hop/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N024,Table I,"LoCoMo, single-hop: planned read accuracy (%)",79.1,PT:locomo/single-hop/judge1/systems/planned_read/accuracy,primary,pct1
+N025,Table I,"LoCoMo, single-hop: planned read memory tokens","2,388",PT:locomo/single-hop/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N026,Table I,"LoCoMo, single-hop: iterative search accuracy (%)",88.2,PT:locomo/single-hop/judge1/systems/iterative_search/accuracy,primary,pct1
+N027,Table I,"LoCoMo, single-hop: iterative search memory tokens","5,292",PT:locomo/single-hop/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N028,Table I,"LoCoMo, single-hop: questions",838,PT:locomo/single-hop/n_questions,-,int
+N029,Table I,"LongMemEval-S*, ss-user: single lookup accuracy (%)",75.6,PT:longmemeval_s_star/ss-user/judge1/systems/single_lookup/accuracy,primary,pct1
+N030,Table I,"LongMemEval-S*, ss-user: single lookup memory tokens","6,346",PT:longmemeval_s_star/ss-user/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N031,Table I,"LongMemEval-S*, ss-user: planned read accuracy (%)",87.8,PT:longmemeval_s_star/ss-user/judge1/systems/planned_read/accuracy,primary,pct1
+N032,Table I,"LongMemEval-S*, ss-user: planned read memory tokens","5,736",PT:longmemeval_s_star/ss-user/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N033,Table I,"LongMemEval-S*, ss-user: iterative search accuracy (%)",95.1,PT:longmemeval_s_star/ss-user/judge1/systems/iterative_search/accuracy,primary,pct1
+N034,Table I,"LongMemEval-S*, ss-user: iterative search memory tokens","4,589",PT:longmemeval_s_star/ss-user/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N035,Table I,"LongMemEval-S*, ss-user: questions",41,PT:longmemeval_s_star/ss-user/n_questions,-,int
+N036,Table I,"LongMemEval-S*, ss-assistant: single lookup accuracy (%)",20.0,PT:longmemeval_s_star/ss-assistant/judge1/systems/single_lookup/accuracy,primary,pct1
+N037,Table I,"LongMemEval-S*, ss-assistant: single lookup memory tokens","6,366",PT:longmemeval_s_star/ss-assistant/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N038,Table I,"LongMemEval-S*, ss-assistant: planned read accuracy (%)",80.0,PT:longmemeval_s_star/ss-assistant/judge1/systems/planned_read/accuracy,primary,pct1
+N039,Table I,"LongMemEval-S*, ss-assistant: planned read memory tokens","6,223",PT:longmemeval_s_star/ss-assistant/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N040,Table I,"LongMemEval-S*, ss-assistant: iterative search accuracy (%)",100.0,PT:longmemeval_s_star/ss-assistant/judge1/systems/iterative_search/accuracy,primary,pct1
+N041,Table I,"LongMemEval-S*, ss-assistant: iterative search memory tokens","4,926",PT:longmemeval_s_star/ss-assistant/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N042,Table I,"LongMemEval-S*, ss-assistant: questions",30,PT:longmemeval_s_star/ss-assistant/n_questions,-,int
+N043,Table I,"LongMemEval-S*, ss-preference: single lookup accuracy (%)",31.0,PT:longmemeval_s_star/ss-preference/judge1/systems/single_lookup/accuracy,primary,pct1
+N044,Table I,"LongMemEval-S*, ss-preference: single lookup memory tokens","6,346",PT:longmemeval_s_star/ss-preference/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N045,Table I,"LongMemEval-S*, ss-preference: planned read accuracy (%)",69.0,PT:longmemeval_s_star/ss-preference/judge1/systems/planned_read/accuracy,primary,pct1
+N046,Table I,"LongMemEval-S*, ss-preference: planned read memory tokens","5,970",PT:longmemeval_s_star/ss-preference/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N047,Table I,"LongMemEval-S*, ss-preference: iterative search accuracy (%)",34.5,PT:longmemeval_s_star/ss-preference/judge1/systems/iterative_search/accuracy,primary,pct1
+N048,Table I,"LongMemEval-S*, ss-preference: iterative search memory tokens","18,760",PT:longmemeval_s_star/ss-preference/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N049,Table I,"LongMemEval-S*, ss-preference: questions",29,PT:longmemeval_s_star/ss-preference/n_questions,-,int
+N050,Table I,"LongMemEval-S*, multi-session: single lookup accuracy (%)",62.9,PT:longmemeval_s_star/multi-session/judge1/systems/single_lookup/accuracy,primary,pct1
+N051,Table I,"LongMemEval-S*, multi-session: single lookup memory tokens","6,343",PT:longmemeval_s_star/multi-session/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N052,Table I,"LongMemEval-S*, multi-session: planned read accuracy (%)",68.6,PT:longmemeval_s_star/multi-session/judge1/systems/planned_read/accuracy,primary,pct1
+N053,Table I,"LongMemEval-S*, multi-session: planned read memory tokens","6,081",PT:longmemeval_s_star/multi-session/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N054,Table I,"LongMemEval-S*, multi-session: iterative search accuracy (%)",62.9,PT:longmemeval_s_star/multi-session/judge1/systems/iterative_search/accuracy,primary,pct1
+N055,Table I,"LongMemEval-S*, multi-session: iterative search memory tokens","15,083",PT:longmemeval_s_star/multi-session/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N056,Table I,"LongMemEval-S*, multi-session: questions",70,PT:longmemeval_s_star/multi-session/n_questions,-,int
+N057,Table I,"LongMemEval-S*, temporal: single lookup accuracy (%)",64.4,PT:longmemeval_s_star/temporal/judge1/systems/single_lookup/accuracy,primary,pct1
+N058,Table I,"LongMemEval-S*, temporal: single lookup memory tokens","6,344",PT:longmemeval_s_star/temporal/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N059,Table I,"LongMemEval-S*, temporal: planned read accuracy (%)",63.0,PT:longmemeval_s_star/temporal/judge1/systems/planned_read/accuracy,primary,pct1
+N060,Table I,"LongMemEval-S*, temporal: planned read memory tokens","6,026",PT:longmemeval_s_star/temporal/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N061,Table I,"LongMemEval-S*, temporal: iterative search accuracy (%)",69.9,PT:longmemeval_s_star/temporal/judge1/systems/iterative_search/accuracy,primary,pct1
+N062,Table I,"LongMemEval-S*, temporal: iterative search memory tokens","12,037",PT:longmemeval_s_star/temporal/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N063,Table I,"LongMemEval-S*, temporal: questions",73,PT:longmemeval_s_star/temporal/n_questions,-,int
+N064,Table I,"LongMemEval-S*, k-update: single lookup accuracy (%)",81.4,PT:longmemeval_s_star/k-update/judge1/systems/single_lookup/accuracy,primary,pct1
+N065,Table I,"LongMemEval-S*, k-update: single lookup memory tokens","6,341",PT:longmemeval_s_star/k-update/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N066,Table I,"LongMemEval-S*, k-update: planned read accuracy (%)",86.0,PT:longmemeval_s_star/k-update/judge1/systems/planned_read/accuracy,primary,pct1
+N067,Table I,"LongMemEval-S*, k-update: planned read memory tokens","5,762",PT:longmemeval_s_star/k-update/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N068,Table I,"LongMemEval-S*, k-update: iterative search accuracy (%)",81.4,PT:longmemeval_s_star/k-update/judge1/systems/iterative_search/accuracy,primary,pct1
+N069,Table I,"LongMemEval-S*, k-update: iterative search memory tokens","9,708",PT:longmemeval_s_star/k-update/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N070,Table I,"LongMemEval-S*, k-update: questions",43,PT:longmemeval_s_star/k-update/n_questions,-,int
+N071,Table I,"LongMemEval-S*, abstention: single lookup accuracy (%)",38.5,PT:longmemeval_s_star/abstention/judge1/systems/single_lookup/accuracy,primary,pct1
+N072,Table I,"LongMemEval-S*, abstention: single lookup memory tokens","6,332",PT:longmemeval_s_star/abstention/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N073,Table I,"LongMemEval-S*, abstention: planned read accuracy (%)",30.8,PT:longmemeval_s_star/abstention/judge1/systems/planned_read/accuracy,primary,pct1
+N074,Table I,"LongMemEval-S*, abstention: planned read memory tokens","5,792",PT:longmemeval_s_star/abstention/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N075,Table I,"LongMemEval-S*, abstention: iterative search accuracy (%)",76.9,PT:longmemeval_s_star/abstention/judge1/systems/iterative_search/accuracy,primary,pct1
+N076,Table I,"LongMemEval-S*, abstention: iterative search memory tokens","18,189",PT:longmemeval_s_star/abstention/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N077,Table I,"LongMemEval-S*, abstention: questions",13,PT:longmemeval_s_star/abstention/n_questions,-,int
+N078,Table I,"LongMemEval-R, ss-user: single lookup accuracy (%)",56.0,PT:longmemeval_r/ss-user/judge1/systems/single_lookup/accuracy,primary,pct1
+N079,Table I,"LongMemEval-R, ss-user: single lookup memory tokens","6,446",PT:longmemeval_r/ss-user/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N080,Table I,"LongMemEval-R, ss-user: planned read accuracy (%)",72.0,PT:longmemeval_r/ss-user/judge1/systems/planned_read/accuracy,primary,pct1
+N081,Table I,"LongMemEval-R, ss-user: planned read memory tokens","6,633",PT:longmemeval_r/ss-user/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N082,Table I,"LongMemEval-R, ss-user: iterative search accuracy (%)",88.0,PT:longmemeval_r/ss-user/judge1/systems/iterative_search/accuracy,primary,pct1
+N083,Table I,"LongMemEval-R, ss-user: iterative search memory tokens","8,922",PT:longmemeval_r/ss-user/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N084,Table I,"LongMemEval-R, ss-user: questions",25,PT:longmemeval_r/ss-user/n_questions,-,int
+N085,Table I,"LongMemEval-R, ss-assistant: single lookup accuracy (%)",30.8,PT:longmemeval_r/ss-assistant/judge1/systems/single_lookup/accuracy,primary,pct1
+N086,Table I,"LongMemEval-R, ss-assistant: single lookup memory tokens","6,547",PT:longmemeval_r/ss-assistant/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N087,Table I,"LongMemEval-R, ss-assistant: planned read accuracy (%)",76.9,PT:longmemeval_r/ss-assistant/judge1/systems/planned_read/accuracy,primary,pct1
+N088,Table I,"LongMemEval-R, ss-assistant: planned read memory tokens","6,918",PT:longmemeval_r/ss-assistant/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N089,Table I,"LongMemEval-R, ss-assistant: iterative search accuracy (%)",96.2,PT:longmemeval_r/ss-assistant/judge1/systems/iterative_search/accuracy,primary,pct1
+N090,Table I,"LongMemEval-R, ss-assistant: iterative search memory tokens","4,673",PT:longmemeval_r/ss-assistant/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N091,Table I,"LongMemEval-R, ss-assistant: questions",26,PT:longmemeval_r/ss-assistant/n_questions,-,int
+N092,Table I,"LongMemEval-R, multi-session: single lookup accuracy (%)",58.6,PT:longmemeval_r/multi-session/judge1/systems/single_lookup/accuracy,primary,pct1
+N093,Table I,"LongMemEval-R, multi-session: single lookup memory tokens","6,383",PT:longmemeval_r/multi-session/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N094,Table I,"LongMemEval-R, multi-session: planned read accuracy (%)",58.6,PT:longmemeval_r/multi-session/judge1/systems/planned_read/accuracy,primary,pct1
+N095,Table I,"LongMemEval-R, multi-session: planned read memory tokens","7,019",PT:longmemeval_r/multi-session/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N096,Table I,"LongMemEval-R, multi-session: iterative search accuracy (%)",65.5,PT:longmemeval_r/multi-session/judge1/systems/iterative_search/accuracy,primary,pct1
+N097,Table I,"LongMemEval-R, multi-session: iterative search memory tokens","14,504",PT:longmemeval_r/multi-session/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N098,Table I,"LongMemEval-R, multi-session: questions",58,PT:longmemeval_r/multi-session/n_questions,-,int
+N099,Table I,"LongMemEval-R, temporal: single lookup accuracy (%)",79.3,PT:longmemeval_r/temporal/judge1/systems/single_lookup/accuracy,primary,pct1
+N100,Table I,"LongMemEval-R, temporal: single lookup memory tokens","6,483",PT:longmemeval_r/temporal/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N101,Table I,"LongMemEval-R, temporal: planned read accuracy (%)",75.9,PT:longmemeval_r/temporal/judge1/systems/planned_read/accuracy,primary,pct1
+N102,Table I,"LongMemEval-R, temporal: planned read memory tokens","7,056",PT:longmemeval_r/temporal/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N103,Table I,"LongMemEval-R, temporal: iterative search accuracy (%)",82.8,PT:longmemeval_r/temporal/judge1/systems/iterative_search/accuracy,primary,pct1
+N104,Table I,"LongMemEval-R, temporal: iterative search memory tokens","9,482",PT:longmemeval_r/temporal/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N105,Table I,"LongMemEval-R, temporal: questions",58,PT:longmemeval_r/temporal/n_questions,-,int
+N106,Table I,"LongMemEval-R, k-update: single lookup accuracy (%)",60.6,PT:longmemeval_r/k-update/judge1/systems/single_lookup/accuracy,primary,pct1
+N107,Table I,"LongMemEval-R, k-update: single lookup memory tokens","6,458",PT:longmemeval_r/k-update/judge1/systems/single_lookup/mean_memory_tokens,-,round_int
+N108,Table I,"LongMemEval-R, k-update: planned read accuracy (%)",69.7,PT:longmemeval_r/k-update/judge1/systems/planned_read/accuracy,primary,pct1
+N109,Table I,"LongMemEval-R, k-update: planned read memory tokens","6,635",PT:longmemeval_r/k-update/judge1/systems/planned_read/mean_memory_tokens,-,round_int
+N110,Table I,"LongMemEval-R, k-update: iterative search accuracy (%)",90.9,PT:longmemeval_r/k-update/judge1/systems/iterative_search/accuracy,primary,pct1
+N111,Table I,"LongMemEval-R, k-update: iterative search memory tokens","9,003",PT:longmemeval_r/k-update/judge1/systems/iterative_search/mean_memory_tokens,-,round_int
+N112,Table I,"LongMemEval-R, k-update: questions",33,PT:longmemeval_r/k-update/n_questions,-,int
+N113,Table II,"LoCoMo, fixed single lookup: accuracy (%)",77.44,W:locomo/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_accuracy,primary,pct2
+N114,Table II,"LoCoMo, fixed single lookup: memory tokens","6,089",W:locomo/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_mean_memory_tokens,-,round_int
+N115,Table II,"LoCoMo, fixed single lookup: MemSwap minus the row (points)",+2.61,W:locomo/margin_pp=1/judge1/vs_baselines/single_lookup/diff_pp,primary,signed2
+N116,Table II,"LoCoMo, fixed single lookup: exact McNemar p",p < 0.001,W:locomo/margin_pp=1/judge1/vs_baselines/single_lookup/mcnemar_p,primary,p
+N117,Table II,"LongMemEval-S*, fixed single lookup: accuracy (%)",59.20,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_accuracy,primary,pct2
+N118,Table II,"LongMemEval-S*, fixed single lookup: memory tokens","6,346",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_mean_memory_tokens,-,round_int
+N119,Table II,"LongMemEval-S*, fixed single lookup: MemSwap minus the row (points)",+18.39,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/single_lookup/diff_pp,primary,signed2
+N120,Table II,"LongMemEval-S*, fixed single lookup: exact McNemar p",p < 0.001,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/single_lookup/mcnemar_p,primary,p
+N121,Table II,"LongMemEval-R, fixed single lookup: accuracy (%)",61.0,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_accuracy,primary,pct1
+N122,Table II,"LongMemEval-R, fixed single lookup: memory tokens","6,454",W:longmemeval_r/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_mean_memory_tokens,-,round_int
+N123,Table II,"LongMemEval-R, fixed single lookup: MemSwap minus the row (points)",+15.5,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/single_lookup/diff_pp,primary,signed1
+N124,Table II,"LongMemEval-R, fixed single lookup: exact McNemar p",p < 0.001,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/single_lookup/mcnemar_p,primary,p
+N125,Table II,"LoCoMo, fixed planned read: accuracy (%)",70.34,W:locomo/margin_pp=1/judge1/vs_baselines/planned_read/baseline_accuracy,primary,pct2
+N126,Table II,"LoCoMo, fixed planned read: memory tokens","2,393",W:locomo/margin_pp=1/judge1/vs_baselines/planned_read/baseline_mean_memory_tokens,-,round_int
+N127,Table II,"LoCoMo, fixed planned read: MemSwap minus the row (points)",+9.71,W:locomo/margin_pp=1/judge1/vs_baselines/planned_read/diff_pp,primary,signed2
+N128,Table II,"LoCoMo, fixed planned read: exact McNemar p",p < 0.001,W:locomo/margin_pp=1/judge1/vs_baselines/planned_read/mcnemar_p,primary,p
+N129,Table II,"LongMemEval-S*, fixed planned read: accuracy (%)",71.91,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/planned_read/baseline_accuracy,primary,pct2
+N130,Table II,"LongMemEval-S*, fixed planned read: memory tokens","5,965",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/planned_read/baseline_mean_memory_tokens,-,round_int
+N131,Table II,"LongMemEval-S*, fixed planned read: MemSwap minus the row (points)",+5.69,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/planned_read/diff_pp,primary,signed2
+N132,Table II,"LongMemEval-S*, fixed planned read: exact McNemar p",p = 0.006,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/planned_read/mcnemar_p,primary,p
+N133,Table II,"LongMemEval-R, fixed planned read: accuracy (%)",69.5,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/planned_read/baseline_accuracy,primary,pct1
+N134,Table II,"LongMemEval-R, fixed planned read: memory tokens","6,905",W:longmemeval_r/margin_pp=1/judge1/vs_baselines/planned_read/baseline_mean_memory_tokens,-,round_int
+N135,Table II,"LongMemEval-R, fixed planned read: MemSwap minus the row (points)",+7.0,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/planned_read/diff_pp,primary,signed1
+N136,Table II,"LongMemEval-R, fixed planned read: exact McNemar p",p = 0.070,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/planned_read/mcnemar_p,primary,p
+N137,Table II,"LoCoMo, fixed iterative search: accuracy (%)",78.68,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_accuracy,primary,pct2
+N138,Table II,"LoCoMo, fixed iterative search: memory tokens","7,205",W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,-,round_int
+N139,Table II,"LoCoMo, fixed iterative search: MemSwap minus the row (points)",+1.37,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/diff_pp,primary,signed2
+N140,Table II,"LoCoMo, fixed iterative search: exact McNemar p",p = 0.092,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/mcnemar_p,primary,p
+N141,Table II,"LongMemEval-S*, fixed iterative search: accuracy (%)",73.24,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_accuracy,primary,pct2
+N142,Table II,"LongMemEval-S*, fixed iterative search: memory tokens","11,600",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,-,round_int
+N143,Table II,"LongMemEval-S*, fixed iterative search: MemSwap minus the row (points)",+4.35,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/diff_pp,primary,signed2
+N144,Table II,"LongMemEval-S*, fixed iterative search: exact McNemar p",p = 0.053,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/mcnemar_p,primary,p
+N145,Table II,"LongMemEval-R, fixed iterative search: accuracy (%)",81.5,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_accuracy,primary,pct1
+N146,Table II,"LongMemEval-R, fixed iterative search: memory tokens","10,164",W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,-,round_int
+N147,Table II,"LongMemEval-R, fixed iterative search: MemSwap minus the row (points)",-5.0,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/diff_pp,primary,signed1
+N148,Table II,"LongMemEval-R, fixed iterative search: exact McNemar p",p = 0.087,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/mcnemar_p,primary,p
+N149,Table II,"LoCoMo, Mem0: accuracy (%)",80.38,W:locomo/margin_pp=1/judge1/vs_baselines/mem0/baseline_accuracy,primary,pct2
+N150,Table II,"LoCoMo, Mem0: memory tokens","7,417",W:locomo/margin_pp=1/judge1/vs_baselines/mem0/baseline_mean_memory_tokens,-,round_int
+N151,Table II,"LoCoMo, Mem0: MemSwap minus the row (points)",-0.33,W:locomo/margin_pp=1/judge1/vs_baselines/mem0/diff_pp,primary,signed2
+N152,Table II,"LoCoMo, Mem0: exact McNemar p",p = 0.80,W:locomo/margin_pp=1/judge1/vs_baselines/mem0/mcnemar_p,primary,p
+N153,Table II,"LongMemEval-S*, Mem0: accuracy (%)",68.90,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/baseline_accuracy,primary,pct2
+N154,Table II,"LongMemEval-S*, Mem0: memory tokens","8,290",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/baseline_mean_memory_tokens,-,round_int
+N155,Table II,"LongMemEval-S*, Mem0: MemSwap minus the row (points)",+8.70,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/diff_pp,primary,signed2
+N156,Table II,"LongMemEval-S*, Mem0: exact McNemar p",p = 0.007,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/mcnemar_p,primary,p
+N157,Table II,"LoCoMo, Letta: accuracy (%)",78.42,W:locomo/margin_pp=1/judge1/vs_baselines/letta/baseline_accuracy,primary,pct2
+N158,Table II,"LoCoMo, Letta: memory tokens","21,681",W:locomo/margin_pp=1/judge1/vs_baselines/letta/baseline_mean_memory_tokens,-,round_int
+N159,Table II,"LoCoMo, Letta: MemSwap minus the row (points)",+1.63,W:locomo/margin_pp=1/judge1/vs_baselines/letta/diff_pp,primary,signed2
+N160,Table II,"LoCoMo, Letta: exact McNemar p",p = 0.17,W:locomo/margin_pp=1/judge1/vs_baselines/letta/mcnemar_p,primary,p
+N161,Table II,"LongMemEval-S*, Letta: accuracy (%)",63.21,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/baseline_accuracy,primary,pct2
+N162,Table II,"LongMemEval-S*, Letta: memory tokens","46,204",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/baseline_mean_memory_tokens,-,round_int
+N163,Table II,"LongMemEval-S*, Letta: MemSwap minus the row (points)",+14.38,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/diff_pp,primary,signed2
+N164,Table II,"LongMemEval-S*, Letta: exact McNemar p",p < 0.001,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/mcnemar_p,primary,p
+N165,Table II,"LoCoMo, iterative search without context pruning (reference): accuracy (%)",80.12,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/baseline_accuracy,primary,pct2
+N166,Table II,"LoCoMo, iterative search without context pruning (reference): memory tokens","8,501",W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/baseline_mean_memory_tokens,-,round_int
+N167,Table II,"LoCoMo, iterative search without context pruning (reference): MemSwap minus the row (points)",-0.07,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/diff_pp,primary,signed2
+N168,Table II,"LoCoMo, iterative search without context pruning (reference): exact McNemar p",p = 1.0,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/mcnemar_p,primary,p
+N169,Table II,"LongMemEval-S*, iterative search without context pruning (reference): accuracy (%)",72.91,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/baseline_accuracy,primary,pct2
+N170,Table II,"LongMemEval-S*, iterative search without context pruning (reference): memory tokens","15,949",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/baseline_mean_memory_tokens,-,round_int
+N171,Table II,"LongMemEval-S*, iterative search without context pruning (reference): MemSwap minus the row (points)",+4.68,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/diff_pp,primary,signed2
+N172,Table II,"LongMemEval-S*, iterative search without context pruning (reference): exact McNemar p",p = 0.10,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search_unpruned/mcnemar_p,primary,p
+N173,Table II,"LoCoMo, MemSwap: accuracy (%)",80.05,W:locomo/margin_pp=1/judge1/memswitch/accuracy,primary,pct2
+N174,Table II,"LoCoMo, MemSwap: memory tokens","5,652",W:locomo/margin_pp=1/judge1/memswitch/mean_memory_tokens,-,round_int
+N175,Table II,"LongMemEval-S*, MemSwap: accuracy (%)",77.59,W:longmemeval_s_star/margin_pp=1/judge1/memswitch/accuracy,primary,pct2
+N176,Table II,"LongMemEval-S*, MemSwap: memory tokens","7,705",W:longmemeval_s_star/margin_pp=1/judge1/memswitch/mean_memory_tokens,-,round_int
+N177,Table II,"LongMemEval-R, MemSwap: accuracy (%)",76.5,W:longmemeval_r/margin_pp=1/judge1/memswitch/accuracy,primary,pct1
+N178,Table II,"LongMemEval-R, MemSwap: memory tokens","8,065",W:longmemeval_r/margin_pp=1/judge1/memswitch/mean_memory_tokens,-,round_int
+N179,Table II,"LoCoMo, MemSwap with predicted question types: accuracy (%)",80.25,TC:locomo/replay/judge1/a_argmax/accuracy,primary,pct2
+N180,Table II,"LoCoMo, MemSwap with predicted question types: memory tokens","6,017",TC:locomo/replay/judge1/a_argmax/mean_memory_tokens,-,round_int
+N181,Table II,"LoCoMo, labels minus predicted (points)",-0.20,TC:locomo/replay/judge1/a_argmax/vs_labels/diff_pp,primary,signed2_flipped
+N182,Table II,"LoCoMo, labels against predicted: exact McNemar p",p = 0.75,TC:locomo/replay/judge1/a_argmax/vs_labels/mcnemar_p,primary,p
+N183,Table II,"LongMemEval-S*, MemSwap with predicted question types: accuracy (%)",75.59,TC:longmemeval_s_star/replay/judge1/a_argmax/accuracy,primary,pct2
+N184,Table II,"LongMemEval-S*, MemSwap with predicted question types: memory tokens","7,823",TC:longmemeval_s_star/replay/judge1/a_argmax/mean_memory_tokens,-,round_int
+N185,Table II,"LongMemEval-S*, labels minus predicted (points)",+2.01,TC:longmemeval_s_star/replay/judge1/a_argmax/vs_labels/diff_pp,primary,signed2_flipped
+N186,Table II,"LongMemEval-S*, labels against predicted: exact McNemar p",p = 0.070,TC:longmemeval_s_star/replay/judge1/a_argmax/vs_labels/mcnemar_p,primary,p
+N187,Table II,"LongMemEval-R, MemSwap with predicted question types: accuracy (%)",78.00,TC:longmemeval_r/replay/judge1/a_argmax/accuracy,primary,pct2
+N188,Table II,"LongMemEval-R, MemSwap with predicted question types: memory tokens","9,130",TC:longmemeval_r/replay/judge1/a_argmax/mean_memory_tokens,-,round_int
+N189,Table II,"LongMemEval-R, labels minus predicted (points)",-1.50,TC:longmemeval_r/replay/judge1/a_argmax/vs_labels/diff_pp,primary,signed2_flipped
+N190,Table II,"LongMemEval-R, labels against predicted: exact McNemar p",p = 0.63,TC:longmemeval_r/replay/judge1/a_argmax/vs_labels/mcnemar_p,primary,p
+N191,Table II,"LoCoMo, random selection: accuracy, mean of 200 draws (%)",75.47,W:locomo/margin_pp=1/judge1/vs_baselines/random_selection/accuracy_mean_over_draws,primary,pct2
+N192,Table II,"LoCoMo, random selection: memory tokens (mean of the three mechanisms)","5,229",W:locomo/margin_pp=1/judge1/vs_baselines/random_selection/mean_memory_tokens_spec,-,round_int
+N193,Table II,"LoCoMo, MemSwap minus random selection (points)",+4.58,W:locomo/margin_pp=1/judge1/vs_baselines/random_selection/diff_pp_memswitch_minus_random,primary,signed2
+N194,Table II,"LoCoMo, random selection: median exact McNemar p",p < 0.001,W:locomo/margin_pp=1/judge1/vs_baselines/random_selection/mcnemar_p_median_vs_memswitch,primary,p
+N195,Table II,"LongMemEval-S*, random selection: accuracy, mean of 200 draws (%)",67.95,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/random_selection/accuracy_mean_over_draws,primary,pct2
+N196,Table II,"LongMemEval-S*, random selection: memory tokens (mean of the three mechanisms)","7,970",W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/random_selection/mean_memory_tokens_spec,-,round_int
+N197,Table II,"LongMemEval-S*, MemSwap minus random selection (points)",+9.64,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/random_selection/diff_pp_memswitch_minus_random,primary,signed2
+N198,Table II,"LongMemEval-S*, random selection: median exact McNemar p",p < 0.001,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/random_selection/mcnemar_p_median_vs_memswitch,primary,p
+N199,Table II,"LongMemEval-R, random selection: accuracy, mean of 200 draws (%)",70.9,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/random_selection/accuracy_mean_over_draws,primary,pct1
+N200,Table II,"LongMemEval-R, random selection: memory tokens (mean of the three mechanisms)","7,841",W:longmemeval_r/margin_pp=1/judge1/vs_baselines/random_selection/mean_memory_tokens_spec,-,round_int
+N201,Table II,"LongMemEval-R, MemSwap minus random selection (points)",+5.6,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/random_selection/diff_pp_memswitch_minus_random,primary,signed1
+N202,Table II,"LongMemEval-R, random selection: median exact McNemar p",p = 0.12,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/random_selection/mcnemar_p_median_vs_memswitch,primary,p
+N203,RQ1,"LoCoMo: MemSwap tokens, percent fewer than fixed iterative search",22,W:locomo/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N204,RQ1,"LongMemEval-S*: MemSwap tokens, percent fewer than fixed iterative search",34,W:longmemeval_s_star/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N205,RQ1,"LongMemEval-R: MemSwap tokens, percent fewer than fixed iterative search",21,W:longmemeval_r/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N206,RQ1,LoCoMo: MemSwap minus fixed iterative search,+1.37,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/diff_pp,primary,signed2
+N207,RQ1,exact McNemar p,p = 0.092,W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/mcnemar_p,primary,p
+N208,RQ1,LongMemEval-S*: MemSwap minus fixed iterative search,+4.35,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/diff_pp,primary,signed2
+N209,RQ1,exact McNemar p,p = 0.053,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/mcnemar_p,primary,p
+N210,RQ1,LongMemEval-R: MemSwap minus fixed iterative search,-5.0,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/diff_pp,primary,signed1
+N211,RQ1,exact McNemar p,p = 0.087,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/mcnemar_p,primary,p
+N212,RQ1,LoCoMo: MemSwap minus fixed iterative search,+1.63,W:locomo/margin_pp=1/judge2/vs_baselines/iterative_search/diff_pp,second,signed2
+N213,RQ1,exact McNemar p,p = 0.026,W:locomo/margin_pp=1/judge2/vs_baselines/iterative_search/mcnemar_p,second,p
+N214,RQ1,LongMemEval-S*: MemSwap minus fixed iterative search,+3.34,W:longmemeval_s_star/margin_pp=1/judge2/vs_baselines/iterative_search/diff_pp,second,signed2
+N215,RQ1,exact McNemar p,p = 0.19,W:longmemeval_s_star/margin_pp=1/judge2/vs_baselines/iterative_search/mcnemar_p,second,p
+N216,RQ1,LongMemEval-R: MemSwap minus fixed iterative search,-1.5,W:longmemeval_r/margin_pp=1/judge2/vs_baselines/iterative_search/diff_pp,second,signed1
+N217,RQ1,exact McNemar p,p = 0.38,W:longmemeval_r/margin_pp=1/judge2/vs_baselines/iterative_search/mcnemar_p,second,p
+N218,RQ1,MemSwap minus fixed single lookup or fixed planned read (smallest),2.61,W:locomo/margin_pp=1/judge1/vs_baselines/single_lookup/diff_pp,primary,abs2
+N219,RQ1,MemSwap minus fixed single lookup or fixed planned read (largest),18.39,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/single_lookup/diff_pp,primary,abs2
+N220,RQ1,exact McNemar p,p = 0.070,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/planned_read/mcnemar_p,primary,p
+N221,RQ1,LoCoMo: MemSwap minus random selection,4.58,W:locomo/margin_pp=1/judge1/vs_baselines/random_selection/diff_pp_memswitch_minus_random,primary,abs2
+N222,RQ1,LongMemEval-S*: MemSwap minus random selection,9.64,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/random_selection/diff_pp_memswitch_minus_random,primary,abs2
+N223,RQ1,median p over 200 draws (largest p),p < 0.001,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/random_selection/mcnemar_p_median_vs_memswitch,primary,p
+N224,RQ1,LongMemEval-R: MemSwap minus random selection,5.6,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/random_selection/diff_pp_memswitch_minus_random,primary,abs1
+N225,RQ1,median p over 200 draws,p = 0.12,W:longmemeval_r/margin_pp=1/judge1/vs_baselines/random_selection/mcnemar_p_median_vs_memswitch,primary,p
+N226,RQ1,LoCoMo: MemSwap minus Mem0,-0.33,W:locomo/margin_pp=1/judge1/vs_baselines/mem0/diff_pp,primary,signed2
+N227,RQ1,exact McNemar p,p = 0.80,W:locomo/margin_pp=1/judge1/vs_baselines/mem0/mcnemar_p,primary,p
+N228,RQ1,LoCoMo: MemSwap minus Mem0,-0.78,W:locomo/margin_pp=1/judge2/vs_baselines/mem0/diff_pp,second,signed2
+N229,RQ1,exact McNemar p,p = 0.47,W:locomo/margin_pp=1/judge2/vs_baselines/mem0/mcnemar_p,second,p
+N230,RQ1,"LoCoMo: MemSwap tokens, percent fewer than Mem0",24,W:locomo/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:locomo/margin_pp=1/judge1/vs_baselines/mem0/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N231,RQ1,LongMemEval-S*: MemSwap minus Mem0,8.70,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/diff_pp,primary,abs2
+N232,RQ1,exact McNemar p,p = 0.007,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/mcnemar_p,primary,p
+N233,RQ1,LongMemEval-S*: MemSwap minus Mem0,2.01,W:longmemeval_s_star/margin_pp=1/judge2/vs_baselines/mem0/diff_pp,second,abs2
+N234,RQ1,exact McNemar p,p = 0.54,W:longmemeval_s_star/margin_pp=1/judge2/vs_baselines/mem0/mcnemar_p,second,p
+N235,RQ1,"LongMemEval-S*: MemSwap tokens, percent fewer than Mem0",7,W:longmemeval_s_star/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/mem0/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N236,RQ1,LoCoMo: MemSwap minus Letta,+1.63,W:locomo/margin_pp=1/judge1/vs_baselines/letta/diff_pp,primary,signed2
+N237,RQ1,exact McNemar p,p = 0.17,W:locomo/margin_pp=1/judge1/vs_baselines/letta/mcnemar_p,primary,p
+N238,RQ1,LongMemEval-S*: MemSwap minus Letta,+14.38,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/diff_pp,primary,signed2
+N239,RQ1,exact McNemar p,p < 0.001,W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/mcnemar_p,primary,p
+N240,RQ1,LoCoMo: MemSwap minus Letta,+1.50,W:locomo/margin_pp=1/judge2/vs_baselines/letta/diff_pp,second,signed2
+N241,RQ1,exact McNemar p,p = 0.19,W:locomo/margin_pp=1/judge2/vs_baselines/letta/mcnemar_p,second,p
+N242,RQ1,LongMemEval-S*: MemSwap minus Letta,+16.39,W:longmemeval_s_star/margin_pp=1/judge2/vs_baselines/letta/diff_pp,second,signed2
+N243,RQ1,exact McNemar p,p < 0.001,W:longmemeval_s_star/margin_pp=1/judge2/vs_baselines/letta/mcnemar_p,second,p
+N244,RQ1,LoCoMo: MemSwap tokens as percent of Letta,26,W:locomo/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:locomo/margin_pp=1/judge1/vs_baselines/letta/baseline_mean_memory_tokens,primary,ratio_pct
+N245,RQ1,LongMemEval-S*: MemSwap tokens as percent of Letta,17,W:longmemeval_s_star/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/letta/baseline_mean_memory_tokens,primary,ratio_pct
+N246,RQ1,LoCoMo: empty Letta answers,51,LED:locomo/n_empty,-,round_int
+N247,RQ1,LoCoMo: questions,"1,534",LED:locomo/n,-,round_int
+N248,RQ1,LongMemEval-S*: empty Letta answers,46,LED:longmemeval_s_star/n_empty,-,round_int
+N249,RQ1,LongMemEval-S*: questions,299,LED:longmemeval_s_star/n,-,round_int
+N250,RQ1,"LoCoMo, without empty answers: MemSwap minus Letta",-0.74,LED:locomo/judge1/without_empty_answers/diff_pp,primary,signed2
+N251,RQ1,exact McNemar p,p = 0.54,LED:locomo/judge1/without_empty_answers/mcnemar_p,primary,p
+N252,RQ1,"LongMemEval-S*, without empty answers: MemSwap minus Letta",+4.35,LED:longmemeval_s_star/judge1/without_empty_answers/diff_pp,primary,signed2
+N253,RQ1,exact McNemar p,p = 0.24,LED:longmemeval_s_star/judge1/without_empty_answers/mcnemar_p,primary,p
+N254,RQ1,"LoCoMo, without empty answers: MemSwap minus Letta",-0.88,LED:locomo/judge2/without_empty_answers/diff_pp,second,signed2
+N255,RQ1,exact McNemar p,p = 0.44,LED:locomo/judge2/without_empty_answers/mcnemar_p,second,p
+N256,RQ1,"LongMemEval-S*, without empty answers: MemSwap minus Letta",+5.93,LED:longmemeval_s_star/judge2/without_empty_answers/diff_pp,second,signed2
+N257,RQ1,exact McNemar p,p = 0.096,LED:longmemeval_s_star/judge2/without_empty_answers/mcnemar_p,second,p
+N258,RQ1,LoCoMo: share of question types the Question Classifier predicts correctly (%),82.3,TC:locomo/accuracy,-,pct1
+N259,RQ1,LongMemEval-S*: share of question types the Question Classifier predicts correctly (%),76.6,TC:longmemeval_s_star/accuracy,-,pct1
+N260,RQ1,LongMemEval-R: share of question types the Question Classifier predicts correctly (%),69.5,TC:longmemeval_r/accuracy,-,pct1
+N261,RQ1,"LoCoMo: MemSwap with predicted question types, accuracy (%)",80.25,TC:locomo/replay/judge1/a_argmax/accuracy,primary,pct2
+N262,RQ1,"LongMemEval-S*: MemSwap with predicted question types, accuracy (%)",75.59,TC:longmemeval_s_star/replay/judge1/a_argmax/accuracy,primary,pct2
+N263,RQ1,"LongMemEval-R: MemSwap with predicted question types, accuracy (%)",78.0,TC:longmemeval_r/replay/judge1/a_argmax/accuracy,primary,pct1
+N264,RQ1,LoCoMo: predicted minus label-based,+0.20,TC:locomo/replay/judge1/a_argmax/vs_labels/diff_pp,primary,signed2
+N265,RQ1,exact McNemar p,p = 0.75,TC:locomo/replay/judge1/a_argmax/vs_labels/mcnemar_p,primary,p
+N266,RQ1,LongMemEval-S*: predicted minus label-based,-2.01,TC:longmemeval_s_star/replay/judge1/a_argmax/vs_labels/diff_pp,primary,signed2
+N267,RQ1,exact McNemar p,p = 0.070,TC:longmemeval_s_star/replay/judge1/a_argmax/vs_labels/mcnemar_p,primary,p
+N268,RQ1,LongMemEval-R: predicted minus label-based,+1.5,TC:longmemeval_r/replay/judge1/a_argmax/vs_labels/diff_pp,primary,signed1
+N269,RQ1,exact McNemar p,p = 0.63,TC:longmemeval_r/replay/judge1/a_argmax/vs_labels/mcnemar_p,primary,p
+N270,RQ1,LoCoMo: predicted minus label-based,-0.46,TC:locomo/replay/judge2/a_argmax/vs_labels/diff_pp,second,signed2
+N271,RQ1,exact McNemar p,p = 0.37,TC:locomo/replay/judge2/a_argmax/vs_labels/mcnemar_p,second,p
+N272,RQ1,LongMemEval-S*: predicted minus label-based,-2.01,TC:longmemeval_s_star/replay/judge2/a_argmax/vs_labels/diff_pp,second,signed2
+N273,RQ1,exact McNemar p,p = 0.070,TC:longmemeval_s_star/replay/judge2/a_argmax/vs_labels/mcnemar_p,second,p
+N274,RQ1,LongMemEval-R: predicted minus label-based,0.0,TC:longmemeval_r/replay/judge2/a_argmax/vs_labels/diff_pp,second,pct1
+N275,RQ1,exact McNemar p,p = 1.0,TC:longmemeval_r/replay/judge2/a_argmax/vs_labels/mcnemar_p,second,p
+N276,RQ1,"LoCoMo: MemSwap with predicted question types, percent fewer tokens than fixed iterative search",16,TC:locomo/replay/judge1/a_argmax/mean_memory_tokens  /  W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N277,RQ1,"LongMemEval-S*: MemSwap with predicted question types, percent fewer tokens than fixed iterative search",33,TC:longmemeval_s_star/replay/judge1/a_argmax/mean_memory_tokens  /  W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N278,RQ1,"LongMemEval-R: MemSwap with predicted question types, percent fewer tokens than fixed iterative search",10,TC:longmemeval_r/replay/judge1/a_argmax/mean_memory_tokens  /  W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N279,RQ1,"LoCoMo, margin 10: MemSwap accuracy (%)",79.07,W:locomo/margin_pp=10/judge1/memswitch/accuracy,primary,pct2
+N280,RQ1,"LoCoMo, margin 10: MemSwap tokens","4,896",W:locomo/margin_pp=10/judge1/memswitch/mean_memory_tokens,primary,round_int
+N281,RQ1,"LoCoMo, margin 1: MemSwap accuracy (%)",80.05,W:locomo/margin_pp=1/judge1/memswitch/accuracy,primary,pct2
+N282,RQ1,"LoCoMo, margin 1: MemSwap tokens","5,652",W:locomo/margin_pp=1/judge1/memswitch/mean_memory_tokens,primary,round_int
+N283,RQ1,"LoCoMo: MemSwap tokens, percent fewer than fixed iterative search (answer)",22,W:locomo/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N284,RQ1,"LongMemEval-S*: MemSwap tokens, percent fewer than fixed iterative search (answer)",34,W:longmemeval_s_star/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N285,RQ1,"LongMemEval-R: MemSwap tokens, percent fewer than fixed iterative search (answer)",21,W:longmemeval_r/margin_pp=1/judge1/memswitch/mean_memory_tokens  /  W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N286,RQ1,"LoCoMo: predicted types, percent fewer tokens than fixed iterative search (answer)",16,TC:locomo/replay/judge1/a_argmax/mean_memory_tokens  /  W:locomo/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N287,RQ1,"LongMemEval-S*: predicted types, percent fewer tokens than fixed iterative search (answer)",33,TC:longmemeval_s_star/replay/judge1/a_argmax/mean_memory_tokens  /  W:longmemeval_s_star/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N288,RQ1,"LongMemEval-R: predicted types, percent fewer tokens than fixed iterative search (answer)",10,TC:longmemeval_r/replay/judge1/a_argmax/mean_memory_tokens  /  W:longmemeval_r/margin_pp=1/judge1/vs_baselines/iterative_search/baseline_mean_memory_tokens,primary,ratio_fewer_pct
+N289,RQ2 budgets,LoCoMo B=2393: windows within budget / windows,10/30,BA:locomo/judge1/budgets/B=2393/windows[kept],primary,text
+N290,RQ2 budgets,LoCoMo B=2393: budget,"2,393",BV:locomo/judge1/B=2393/budget,primary,round_int
+N291,RQ2 budgets,"LoCoMo B=2393: best fixed that fits, accuracy (%)",70.34,BV:locomo/judge1/B=2393/best_fixed_accuracy,primary,pct2
+N292,RQ2 budgets,LoCoMo B=2393: MemSwap accuracy (%),70.34,BV:locomo/judge1/B=2393/memswap_accuracy,primary,pct2
+N293,RQ2 budgets,LoCoMo B=2393: MemSwap tokens,"2,393",BV:locomo/judge1/B=2393/memswap_tokens,primary,round_int
+N294,RQ2 budgets,LoCoMo B=2393: MemSwap minus best fixed,0.00,BV:locomo/judge1/B=2393/diff_pp,primary,pct2
+N295,RQ2 budgets,exact McNemar p,p = 1.0,BV:locomo/judge1/B=2393/mcnemar_p,primary,p
+N296,RQ2 budgets,LoCoMo B=3356: windows within budget / windows,17/30,BA:locomo/judge1/budgets/B=3356/windows[kept],primary,text
+N297,RQ2 budgets,LoCoMo B=3356: budget,"3,356",BV:locomo/judge1/B=3356/budget,primary,round_int
+N298,RQ2 budgets,"LoCoMo B=3356: best fixed that fits, accuracy (%)",70.34,BV:locomo/judge1/B=3356/best_fixed_accuracy,primary,pct2
+N299,RQ2 budgets,LoCoMo B=3356: MemSwap accuracy (%),74.12,BV:locomo/judge1/B=3356/memswap_accuracy,primary,pct2
+N300,RQ2 budgets,LoCoMo B=3356: MemSwap tokens,"3,306",BV:locomo/judge1/B=3356/memswap_tokens,primary,round_int
+N301,RQ2 budgets,LoCoMo B=3356: MemSwap minus best fixed,+3.78,BV:locomo/judge1/B=3356/diff_pp,primary,signed2
+N302,RQ2 budgets,exact McNemar p,p < 0.001,BV:locomo/judge1/B=3356/mcnemar_p,primary,p
+N303,RQ2 budgets,LoCoMo B=3356: budget-matched mixing accuracy (%),72.18,BA:locomo/judge1/budgets/B=3356/random_mixing/accuracy_mean_over_draws,primary,pct2
+N304,RQ2 budgets,LoCoMo B=3356: MemSwap minus mixing,+1.94,BA:locomo/judge1/budgets/B=3356/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N305,RQ2 budgets,median p over 200 draws,p = 0.012,BA:locomo/judge1/budgets/B=3356/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N306,RQ2 budgets,LoCoMo B=4318: windows within budget / windows,16/30,BA:locomo/judge1/budgets/B=4318/windows[kept],primary,text
+N307,RQ2 budgets,LoCoMo B=4318: budget,"4,318",BV:locomo/judge1/B=4318/budget,primary,round_int
+N308,RQ2 budgets,"LoCoMo B=4318: best fixed that fits, accuracy (%)",70.34,BV:locomo/judge1/B=4318/best_fixed_accuracy,primary,pct2
+N309,RQ2 budgets,LoCoMo B=4318: MemSwap accuracy (%),74.90,BV:locomo/judge1/B=4318/memswap_accuracy,primary,pct2
+N310,RQ2 budgets,LoCoMo B=4318: MemSwap tokens,"4,079",BV:locomo/judge1/B=4318/memswap_tokens,primary,round_int
+N311,RQ2 budgets,LoCoMo B=4318: MemSwap minus best fixed,+4.56,BV:locomo/judge1/B=4318/diff_pp,primary,signed2
+N312,RQ2 budgets,exact McNemar p,p < 0.001,BV:locomo/judge1/B=4318/mcnemar_p,primary,p
+N313,RQ2 budgets,LoCoMo B=4318: budget-matched mixing accuracy (%),74.02,BA:locomo/judge1/budgets/B=4318/random_mixing/accuracy_mean_over_draws,primary,pct2
+N314,RQ2 budgets,LoCoMo B=4318: MemSwap minus mixing,+0.88,BA:locomo/judge1/budgets/B=4318/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N315,RQ2 budgets,median p over 200 draws,p = 0.39,BA:locomo/judge1/budgets/B=4318/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N316,RQ2 budgets,LoCoMo B=5281: windows within budget / windows,22/30,BA:locomo/judge1/budgets/B=5281/windows[kept],primary,text
+N317,RQ2 budgets,LoCoMo B=5281: budget,"5,281",BV:locomo/judge1/B=5281/budget,primary,round_int
+N318,RQ2 budgets,"LoCoMo B=5281: best fixed that fits, accuracy (%)",70.34,BV:locomo/judge1/B=5281/best_fixed_accuracy,primary,pct2
+N319,RQ2 budgets,LoCoMo B=5281: MemSwap accuracy (%),79.07,BV:locomo/judge1/B=5281/memswap_accuracy,primary,pct2
+N320,RQ2 budgets,LoCoMo B=5281: MemSwap tokens,"4,896",BV:locomo/judge1/B=5281/memswap_tokens,primary,round_int
+N321,RQ2 budgets,LoCoMo B=5281: MemSwap minus best fixed,+8.74,BV:locomo/judge1/B=5281/diff_pp,primary,signed2
+N322,RQ2 budgets,exact McNemar p,p < 0.001,BV:locomo/judge1/B=5281/mcnemar_p,primary,p
+N323,RQ2 budgets,LoCoMo B=5281: budget-matched mixing accuracy (%),75.85,BA:locomo/judge1/budgets/B=5281/random_mixing/accuracy_mean_over_draws,primary,pct2
+N324,RQ2 budgets,LoCoMo B=5281: MemSwap minus mixing,+3.23,BA:locomo/judge1/budgets/B=5281/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N325,RQ2 budgets,median p over 200 draws,p < 0.001,BA:locomo/judge1/budgets/B=5281/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N326,RQ2 budgets,LoCoMo B=6243: windows within budget / windows,26/30,BA:locomo/judge1/budgets/B=6243/windows[kept],primary,text
+N327,RQ2 budgets,LoCoMo B=6243: budget,"6,243",BV:locomo/judge1/B=6243/budget,primary,round_int
+N328,RQ2 budgets,"LoCoMo B=6243: best fixed that fits, accuracy (%)",77.44,BV:locomo/judge1/B=6243/best_fixed_accuracy,primary,pct2
+N329,RQ2 budgets,LoCoMo B=6243: MemSwap accuracy (%),80.05,BV:locomo/judge1/B=6243/memswap_accuracy,primary,pct2
+N330,RQ2 budgets,LoCoMo B=6243: MemSwap tokens,"5,652",BV:locomo/judge1/B=6243/memswap_tokens,primary,round_int
+N331,RQ2 budgets,LoCoMo B=6243: MemSwap minus best fixed,+2.61,BV:locomo/judge1/B=6243/diff_pp,primary,signed2
+N332,RQ2 budgets,exact McNemar p,p < 0.001,BV:locomo/judge1/B=6243/mcnemar_p,primary,p
+N333,RQ2 budgets,LoCoMo B=6243: budget-matched mixing accuracy (%),77.62,BA:locomo/judge1/budgets/B=6243/random_mixing/accuracy_mean_over_draws,primary,pct2
+N334,RQ2 budgets,LoCoMo B=6243: MemSwap minus mixing,+2.43,BA:locomo/judge1/budgets/B=6243/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N335,RQ2 budgets,median p over 200 draws,p = 0.002,BA:locomo/judge1/budgets/B=6243/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N336,RQ2 budgets,LoCoMo B=7205: windows within budget / windows,30/30,BA:locomo/judge1/budgets/B=7205/windows[kept],primary,text
+N337,RQ2 budgets,LoCoMo B=7205: budget,"7,205",BV:locomo/judge1/B=7205/budget,primary,round_int
+N338,RQ2 budgets,"LoCoMo B=7205: best fixed that fits, accuracy (%)",78.68,BV:locomo/judge1/B=7205/best_fixed_accuracy,primary,pct2
+N339,RQ2 budgets,LoCoMo B=7205: MemSwap accuracy (%),80.05,BV:locomo/judge1/B=7205/memswap_accuracy,primary,pct2
+N340,RQ2 budgets,LoCoMo B=7205: MemSwap tokens,"5,652",BV:locomo/judge1/B=7205/memswap_tokens,primary,round_int
+N341,RQ2 budgets,LoCoMo B=7205: MemSwap minus best fixed,+1.37,BV:locomo/judge1/B=7205/diff_pp,primary,signed2
+N342,RQ2 budgets,exact McNemar p,p = 0.092,BV:locomo/judge1/B=7205/mcnemar_p,primary,p
+N343,RQ2 budgets,LongMemEval-S* B=5965: windows within budget / windows,4/5,BA:longmemeval_s_star/judge1/budgets/B=5965/windows[kept],primary,text
+N344,RQ2 budgets,LongMemEval-S* B=5965: budget,"5,965",BV:longmemeval_s_star/judge1/B=5965/budget,primary,round_int
+N345,RQ2 budgets,"LongMemEval-S* B=5965: best fixed that fits, accuracy (%)",71.91,BV:longmemeval_s_star/judge1/B=5965/best_fixed_accuracy,primary,pct2
+N346,RQ2 budgets,LongMemEval-S* B=5965: MemSwap accuracy (%),72.91,BV:longmemeval_s_star/judge1/B=5965/memswap_accuracy,primary,pct2
+N347,RQ2 budgets,LongMemEval-S* B=5965: MemSwap tokens,"5,758",BV:longmemeval_s_star/judge1/B=5965/memswap_tokens,primary,round_int
+N348,RQ2 budgets,LongMemEval-S* B=5965: MemSwap minus best fixed,+1.00,BV:longmemeval_s_star/judge1/B=5965/diff_pp,primary,signed2
+N349,RQ2 budgets,exact McNemar p,p = 0.69,BV:longmemeval_s_star/judge1/B=5965/mcnemar_p,primary,p
+N350,RQ2 budgets,LongMemEval-S* B=7092: windows within budget / windows,4/5,BA:longmemeval_s_star/judge1/budgets/B=7092/windows[kept],primary,text
+N351,RQ2 budgets,LongMemEval-S* B=7092: budget,"7,092",BV:longmemeval_s_star/judge1/B=7092/budget,primary,round_int
+N352,RQ2 budgets,"LongMemEval-S* B=7092: best fixed that fits, accuracy (%)",71.91,BV:longmemeval_s_star/judge1/B=7092/best_fixed_accuracy,primary,pct2
+N353,RQ2 budgets,LongMemEval-S* B=7092: MemSwap accuracy (%),74.92,BV:longmemeval_s_star/judge1/B=7092/memswap_accuracy,primary,pct2
+N354,RQ2 budgets,LongMemEval-S* B=7092: MemSwap tokens,"6,278",BV:longmemeval_s_star/judge1/B=7092/memswap_tokens,primary,round_int
+N355,RQ2 budgets,LongMemEval-S* B=7092: MemSwap minus best fixed,+3.01,BV:longmemeval_s_star/judge1/B=7092/diff_pp,primary,signed2
+N356,RQ2 budgets,exact McNemar p,p = 0.15,BV:longmemeval_s_star/judge1/B=7092/mcnemar_p,primary,p
+N357,RQ2 budgets,LongMemEval-S* B=7092: budget-matched mixing accuracy (%),72.17,BA:longmemeval_s_star/judge1/budgets/B=7092/random_mixing/accuracy_mean_over_draws,primary,pct2
+N358,RQ2 budgets,LongMemEval-S* B=7092: MemSwap minus mixing,+2.75,BA:longmemeval_s_star/judge1/budgets/B=7092/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N359,RQ2 budgets,median p over 200 draws,p = 0.23,BA:longmemeval_s_star/judge1/budgets/B=7092/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N360,RQ2 budgets,LongMemEval-S* B=8219: windows within budget / windows,4/5,BA:longmemeval_s_star/judge1/budgets/B=8219/windows[kept],primary,text
+N361,RQ2 budgets,LongMemEval-S* B=8219: budget,"8,219",BV:longmemeval_s_star/judge1/B=8219/budget,primary,round_int
+N362,RQ2 budgets,"LongMemEval-S* B=8219: best fixed that fits, accuracy (%)",71.91,BV:longmemeval_s_star/judge1/B=8219/best_fixed_accuracy,primary,pct2
+N363,RQ2 budgets,LongMemEval-S* B=8219: MemSwap accuracy (%),77.59,BV:longmemeval_s_star/judge1/B=8219/memswap_accuracy,primary,pct2
+N364,RQ2 budgets,LongMemEval-S* B=8219: MemSwap tokens,"7,705",BV:longmemeval_s_star/judge1/B=8219/memswap_tokens,primary,round_int
+N365,RQ2 budgets,LongMemEval-S* B=8219: MemSwap minus best fixed,+5.69,BV:longmemeval_s_star/judge1/B=8219/diff_pp,primary,signed2
+N366,RQ2 budgets,exact McNemar p,p = 0.006,BV:longmemeval_s_star/judge1/B=8219/mcnemar_p,primary,p
+N367,RQ2 budgets,LongMemEval-S* B=8219: budget-matched mixing accuracy (%),72.56,BA:longmemeval_s_star/judge1/budgets/B=8219/random_mixing/accuracy_mean_over_draws,primary,pct2
+N368,RQ2 budgets,LongMemEval-S* B=8219: MemSwap minus mixing,+5.03,BA:longmemeval_s_star/judge1/budgets/B=8219/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N369,RQ2 budgets,median p over 200 draws,p = 0.018,BA:longmemeval_s_star/judge1/budgets/B=8219/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N370,RQ2 budgets,LongMemEval-S* B=9346: windows within budget / windows,4/5,BA:longmemeval_s_star/judge1/budgets/B=9346/windows[kept],primary,text
+N371,RQ2 budgets,LongMemEval-S* B=9346: budget,"9,346",BV:longmemeval_s_star/judge1/B=9346/budget,primary,round_int
+N372,RQ2 budgets,"LongMemEval-S* B=9346: best fixed that fits, accuracy (%)",71.91,BV:longmemeval_s_star/judge1/B=9346/best_fixed_accuracy,primary,pct2
+N373,RQ2 budgets,LongMemEval-S* B=9346: MemSwap accuracy (%),77.59,BV:longmemeval_s_star/judge1/B=9346/memswap_accuracy,primary,pct2
+N374,RQ2 budgets,LongMemEval-S* B=9346: MemSwap tokens,"7,705",BV:longmemeval_s_star/judge1/B=9346/memswap_tokens,primary,round_int
+N375,RQ2 budgets,LongMemEval-S* B=9346: MemSwap minus best fixed,+5.69,BV:longmemeval_s_star/judge1/B=9346/diff_pp,primary,signed2
+N376,RQ2 budgets,exact McNemar p,p = 0.006,BV:longmemeval_s_star/judge1/B=9346/mcnemar_p,primary,p
+N377,RQ2 budgets,LongMemEval-S* B=9346: budget-matched mixing accuracy (%),72.71,BA:longmemeval_s_star/judge1/budgets/B=9346/random_mixing/accuracy_mean_over_draws,primary,pct2
+N378,RQ2 budgets,LongMemEval-S* B=9346: MemSwap minus mixing,+4.88,BA:longmemeval_s_star/judge1/budgets/B=9346/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N379,RQ2 budgets,median p over 200 draws,p = 0.024,BA:longmemeval_s_star/judge1/budgets/B=9346/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N380,RQ2 budgets,LongMemEval-S* B=10473: windows within budget / windows,5/5,BA:longmemeval_s_star/judge1/budgets/B=10473/windows[kept],primary,text
+N381,RQ2 budgets,LongMemEval-S* B=10473: budget,"10,473",BV:longmemeval_s_star/judge1/B=10473/budget,primary,round_int
+N382,RQ2 budgets,"LongMemEval-S* B=10473: best fixed that fits, accuracy (%)",71.91,BV:longmemeval_s_star/judge1/B=10473/best_fixed_accuracy,primary,pct2
+N383,RQ2 budgets,LongMemEval-S* B=10473: MemSwap accuracy (%),77.59,BV:longmemeval_s_star/judge1/B=10473/memswap_accuracy,primary,pct2
+N384,RQ2 budgets,LongMemEval-S* B=10473: MemSwap tokens,"7,705",BV:longmemeval_s_star/judge1/B=10473/memswap_tokens,primary,round_int
+N385,RQ2 budgets,LongMemEval-S* B=10473: MemSwap minus best fixed,+5.69,BV:longmemeval_s_star/judge1/B=10473/diff_pp,primary,signed2
+N386,RQ2 budgets,exact McNemar p,p = 0.006,BV:longmemeval_s_star/judge1/B=10473/mcnemar_p,primary,p
+N387,RQ2 budgets,LongMemEval-S* B=10473: budget-matched mixing accuracy (%),72.87,BA:longmemeval_s_star/judge1/budgets/B=10473/random_mixing/accuracy_mean_over_draws,primary,pct2
+N388,RQ2 budgets,LongMemEval-S* B=10473: MemSwap minus mixing,+4.73,BA:longmemeval_s_star/judge1/budgets/B=10473/random_mixing/diff_pp_memswitch_minus_random,primary,signed2
+N389,RQ2 budgets,median p over 200 draws,p = 0.035,BA:longmemeval_s_star/judge1/budgets/B=10473/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N390,RQ2 budgets,LongMemEval-S* B=11600: windows within budget / windows,5/5,BA:longmemeval_s_star/judge1/budgets/B=11600/windows[kept],primary,text
+N391,RQ2 budgets,LongMemEval-S* B=11600: budget,"11,600",BV:longmemeval_s_star/judge1/B=11600/budget,primary,round_int
+N392,RQ2 budgets,"LongMemEval-S* B=11600: best fixed that fits, accuracy (%)",73.24,BV:longmemeval_s_star/judge1/B=11600/best_fixed_accuracy,primary,pct2
+N393,RQ2 budgets,LongMemEval-S* B=11600: MemSwap accuracy (%),77.59,BV:longmemeval_s_star/judge1/B=11600/memswap_accuracy,primary,pct2
+N394,RQ2 budgets,LongMemEval-S* B=11600: MemSwap tokens,"7,705",BV:longmemeval_s_star/judge1/B=11600/memswap_tokens,primary,round_int
+N395,RQ2 budgets,LongMemEval-S* B=11600: MemSwap minus best fixed,+4.35,BV:longmemeval_s_star/judge1/B=11600/diff_pp,primary,signed2
+N396,RQ2 budgets,exact McNemar p,p = 0.053,BV:longmemeval_s_star/judge1/B=11600/mcnemar_p,primary,p
+N397,RQ2 budgets,LongMemEval-R B=6905: windows within budget / windows,3/4,BA:longmemeval_r/judge1/budgets/B=6905/windows[kept],primary,text
+N398,RQ2 budgets,LongMemEval-R B=6905: budget,"6,905",BV:longmemeval_r/judge1/B=6905/budget,primary,round_int
+N399,RQ2 budgets,"LongMemEval-R B=6905: best fixed that fits, accuracy (%)",69.5,BV:longmemeval_r/judge1/B=6905/best_fixed_accuracy,primary,pct1
+N400,RQ2 budgets,LongMemEval-R B=6905: MemSwap accuracy (%),72.5,BV:longmemeval_r/judge1/B=6905/memswap_accuracy,primary,pct1
+N401,RQ2 budgets,LongMemEval-R B=6905: MemSwap tokens,"6,859",BV:longmemeval_r/judge1/B=6905/memswap_tokens,primary,round_int
+N402,RQ2 budgets,LongMemEval-R B=6905: MemSwap minus best fixed,+3.0,BV:longmemeval_r/judge1/B=6905/diff_pp,primary,signed1
+N403,RQ2 budgets,exact McNemar p,p = 0.48,BV:longmemeval_r/judge1/B=6905/mcnemar_p,primary,p
+N404,RQ2 budgets,LongMemEval-R B=7557: windows within budget / windows,3/4,BA:longmemeval_r/judge1/budgets/B=7557/windows[kept],primary,text
+N405,RQ2 budgets,LongMemEval-R B=7557: budget,"7,557",BV:longmemeval_r/judge1/B=7557/budget,primary,round_int
+N406,RQ2 budgets,"LongMemEval-R B=7557: best fixed that fits, accuracy (%)",69.5,BV:longmemeval_r/judge1/B=7557/best_fixed_accuracy,primary,pct1
+N407,RQ2 budgets,LongMemEval-R B=7557: MemSwap accuracy (%),74.0,BV:longmemeval_r/judge1/B=7557/memswap_accuracy,primary,pct1
+N408,RQ2 budgets,LongMemEval-R B=7557: MemSwap tokens,"6,793",BV:longmemeval_r/judge1/B=7557/memswap_tokens,primary,round_int
+N409,RQ2 budgets,LongMemEval-R B=7557: MemSwap minus best fixed,+4.5,BV:longmemeval_r/judge1/B=7557/diff_pp,primary,signed1
+N410,RQ2 budgets,exact McNemar p,p = 0.25,BV:longmemeval_r/judge1/B=7557/mcnemar_p,primary,p
+N411,RQ2 budgets,LongMemEval-R B=7557: budget-matched mixing accuracy (%),71.9,BA:longmemeval_r/judge1/budgets/B=7557/random_mixing/accuracy_mean_over_draws,primary,pct1
+N412,RQ2 budgets,LongMemEval-R B=7557: MemSwap minus mixing,+2.1,BA:longmemeval_r/judge1/budgets/B=7557/random_mixing/diff_pp_memswitch_minus_random,primary,signed1
+N413,RQ2 budgets,median p over 200 draws,p = 0.66,BA:longmemeval_r/judge1/budgets/B=7557/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N414,RQ2 budgets,LongMemEval-R B=8208: windows within budget / windows,3/4,BA:longmemeval_r/judge1/budgets/B=8208/windows[kept],primary,text
+N415,RQ2 budgets,LongMemEval-R B=8208: budget,"8,208",BV:longmemeval_r/judge1/B=8208/budget,primary,round_int
+N416,RQ2 budgets,"LongMemEval-R B=8208: best fixed that fits, accuracy (%)",69.5,BV:longmemeval_r/judge1/B=8208/best_fixed_accuracy,primary,pct1
+N417,RQ2 budgets,LongMemEval-R B=8208: MemSwap accuracy (%),74.0,BV:longmemeval_r/judge1/B=8208/memswap_accuracy,primary,pct1
+N418,RQ2 budgets,LongMemEval-R B=8208: MemSwap tokens,"7,115",BV:longmemeval_r/judge1/B=8208/memswap_tokens,primary,round_int
+N419,RQ2 budgets,LongMemEval-R B=8208: MemSwap minus best fixed,+4.5,BV:longmemeval_r/judge1/B=8208/diff_pp,primary,signed1
+N420,RQ2 budgets,exact McNemar p,p = 0.24,BV:longmemeval_r/judge1/B=8208/mcnemar_p,primary,p
+N421,RQ2 budgets,LongMemEval-R B=8208: budget-matched mixing accuracy (%),74.3,BA:longmemeval_r/judge1/budgets/B=8208/random_mixing/accuracy_mean_over_draws,primary,pct1
+N422,RQ2 budgets,LongMemEval-R B=8208: MemSwap minus mixing,-0.3,BA:longmemeval_r/judge1/budgets/B=8208/random_mixing/diff_pp_memswitch_minus_random,primary,signed1
+N423,RQ2 budgets,median p over 200 draws,p = 0.88,BA:longmemeval_r/judge1/budgets/B=8208/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N424,RQ2 budgets,LongMemEval-R B=8860: windows within budget / windows,4/4,BA:longmemeval_r/judge1/budgets/B=8860/windows[kept],primary,text
+N425,RQ2 budgets,LongMemEval-R B=8860: budget,"8,860",BV:longmemeval_r/judge1/B=8860/budget,primary,round_int
+N426,RQ2 budgets,"LongMemEval-R B=8860: best fixed that fits, accuracy (%)",69.5,BV:longmemeval_r/judge1/B=8860/best_fixed_accuracy,primary,pct1
+N427,RQ2 budgets,LongMemEval-R B=8860: MemSwap accuracy (%),74.0,BV:longmemeval_r/judge1/B=8860/memswap_accuracy,primary,pct1
+N428,RQ2 budgets,LongMemEval-R B=8860: MemSwap tokens,"7,115",BV:longmemeval_r/judge1/B=8860/memswap_tokens,primary,round_int
+N429,RQ2 budgets,LongMemEval-R B=8860: MemSwap minus best fixed,+4.5,BV:longmemeval_r/judge1/B=8860/diff_pp,primary,signed1
+N430,RQ2 budgets,exact McNemar p,p = 0.24,BV:longmemeval_r/judge1/B=8860/mcnemar_p,primary,p
+N431,RQ2 budgets,LongMemEval-R B=8860: budget-matched mixing accuracy (%),76.7,BA:longmemeval_r/judge1/budgets/B=8860/random_mixing/accuracy_mean_over_draws,primary,pct1
+N432,RQ2 budgets,LongMemEval-R B=8860: MemSwap minus mixing,-2.7,BA:longmemeval_r/judge1/budgets/B=8860/random_mixing/diff_pp_memswitch_minus_random,primary,signed1
+N433,RQ2 budgets,median p over 200 draws,p = 0.48,BA:longmemeval_r/judge1/budgets/B=8860/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N434,RQ2 budgets,LongMemEval-R B=9512: windows within budget / windows,4/4,BA:longmemeval_r/judge1/budgets/B=9512/windows[kept],primary,text
+N435,RQ2 budgets,LongMemEval-R B=9512: budget,"9,512",BV:longmemeval_r/judge1/B=9512/budget,primary,round_int
+N436,RQ2 budgets,"LongMemEval-R B=9512: best fixed that fits, accuracy (%)",69.5,BV:longmemeval_r/judge1/B=9512/best_fixed_accuracy,primary,pct1
+N437,RQ2 budgets,LongMemEval-R B=9512: MemSwap accuracy (%),75.5,BV:longmemeval_r/judge1/B=9512/memswap_accuracy,primary,pct1
+N438,RQ2 budgets,LongMemEval-R B=9512: MemSwap tokens,"7,867",BV:longmemeval_r/judge1/B=9512/memswap_tokens,primary,round_int
+N439,RQ2 budgets,LongMemEval-R B=9512: MemSwap minus best fixed,+6.0,BV:longmemeval_r/judge1/B=9512/diff_pp,primary,signed1
+N440,RQ2 budgets,exact McNemar p,p = 0.13,BV:longmemeval_r/judge1/B=9512/mcnemar_p,primary,p
+N441,RQ2 budgets,LongMemEval-R B=9512: budget-matched mixing accuracy (%),79.1,BA:longmemeval_r/judge1/budgets/B=9512/random_mixing/accuracy_mean_over_draws,primary,pct1
+N442,RQ2 budgets,LongMemEval-R B=9512: MemSwap minus mixing,-3.6,BA:longmemeval_r/judge1/budgets/B=9512/random_mixing/diff_pp_memswitch_minus_random,primary,signed1
+N443,RQ2 budgets,median p over 200 draws,p = 0.30,BA:longmemeval_r/judge1/budgets/B=9512/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N444,RQ2 budgets,LongMemEval-R B=10164: windows within budget / windows,4/4,BA:longmemeval_r/judge1/budgets/B=10164/windows[kept],primary,text
+N445,RQ2 budgets,LongMemEval-R B=10164: budget,"10,164",BV:longmemeval_r/judge1/B=10164/budget,primary,round_int
+N446,RQ2 budgets,"LongMemEval-R B=10164: best fixed that fits, accuracy (%)",81.5,BV:longmemeval_r/judge1/B=10164/best_fixed_accuracy,primary,pct1
+N447,RQ2 budgets,LongMemEval-R B=10164: MemSwap accuracy (%),76.0,BV:longmemeval_r/judge1/B=10164/memswap_accuracy,primary,pct1
+N448,RQ2 budgets,LongMemEval-R B=10164: MemSwap tokens,"7,793",BV:longmemeval_r/judge1/B=10164/memswap_tokens,primary,round_int
+N449,RQ2 budgets,LongMemEval-R B=10164: MemSwap minus best fixed,-5.5,BV:longmemeval_r/judge1/B=10164/diff_pp,primary,signed1
+N450,RQ2 budgets,exact McNemar p,p = 0.071,BV:longmemeval_r/judge1/B=10164/mcnemar_p,primary,p
+N451,RQ2 budgets,"LoCoMo, four middle levels: MemSwap minus best fixed that fits (smallest)",2.61,BV:locomo/judge1/B=6243/diff_pp,primary,abs2
+N452,RQ2 budgets,"LoCoMo, four middle levels: MemSwap minus best fixed that fits (largest)",8.74,BV:locomo/judge1/B=5281/diff_pp,primary,abs2
+N453,RQ2 budgets,four middle levels (largest p),p < 0.001,BV:locomo/judge1/B=6243/mcnemar_p,primary,p
+N454,RQ2 budgets,"LoCoMo, four middle levels: MemSwap minus best fixed that fits (smallest)",3.13,BV:locomo/judge2/B=6243/diff_pp,second,abs2
+N455,RQ2 budgets,"LoCoMo, four middle levels: MemSwap minus best fixed that fits (largest)",9.78,BV:locomo/judge2/B=5281/diff_pp,second,abs2
+N456,RQ2 budgets,four middle levels (largest p),p < 0.001,BV:locomo/judge2/B=6243/mcnemar_p,second,p
+N457,RQ2 budgets,"LoCoMo, highest level: MemSwap minus fixed iterative search",1.37,BV:locomo/judge1/B=7205/diff_pp,primary,abs2
+N458,RQ2 budgets,exact McNemar p,p = 0.092,BV:locomo/judge1/B=7205/mcnemar_p,primary,p
+N459,RQ2 budgets,"LoCoMo, highest level: MemSwap minus fixed iterative search",1.63,BV:locomo/judge2/B=7205/diff_pp,second,abs2
+N460,RQ2 budgets,exact McNemar p,p = 0.026,BV:locomo/judge2/B=7205/mcnemar_p,second,p
+N461,RQ2 budgets,"LoCoMo, four middle levels: MemSwap minus budget-matched mixing (smallest)",0.88,BA:locomo/judge1/budgets/B=4318/random_mixing/diff_pp_memswitch_minus_random,primary,abs2
+N462,RQ2 budgets,"LoCoMo, four middle levels: MemSwap minus budget-matched mixing (largest)",3.23,BA:locomo/judge1/budgets/B=5281/random_mixing/diff_pp_memswitch_minus_random,primary,abs2
+N463,RQ2 budgets,LoCoMo: the level where mixing is not significantly worse,"4,318",BV:locomo/judge1/B=4318/budget,primary,round_int
+N464,RQ2 budgets,median p,p = 0.39,BA:locomo/judge1/budgets/B=4318/random_mixing/mcnemar_p_median_vs_memswitch,primary,p
+N465,RQ2 budgets,median p,p = 0.66,BA:locomo/judge2/budgets/B=4318/random_mixing/mcnemar_p_median_vs_memswitch,second,p
+N466,RQ2 budgets,"LongMemEval-S*, levels 3 to 5: MemSwap minus best fixed",5.69,BV:longmemeval_s_star/judge1/B=8219/diff_pp,primary,abs2
+N467,RQ2 budgets,LongMemEval-S*: third level,"8,219",BV:longmemeval_s_star/judge1/B=8219/budget,primary,round_int
+N468,RQ2 budgets,LongMemEval-S*: fifth level,"10,473",BV:longmemeval_s_star/judge1/B=10473/budget,primary,round_int
+N469,RQ2 budgets,exact McNemar p,p = 0.006,BV:longmemeval_s_star/judge1/B=8219/mcnemar_p,primary,p
+N470,RQ2 budgets,"LongMemEval-S*, levels 3 to 5: MemSwap minus best fixed",4.01,BV:longmemeval_s_star/judge2/B=8219/diff_pp,second,abs2
+N471,RQ2 budgets,exact McNemar p,p = 0.036,BV:longmemeval_s_star/judge2/B=8219/mcnemar_p,second,p
+N472,RQ2 budgets,"LongMemEval-S*, levels 1, 2 and 6: MemSwap minus best fixed (smallest)",1.00,BV:longmemeval_s_star/judge1/B=5965/diff_pp,primary,abs2
+N473,RQ2 budgets,"LongMemEval-S*, levels 1, 2 and 6: MemSwap minus best fixed (largest)",4.35,BV:longmemeval_s_star/judge1/B=11600/diff_pp,primary,abs2
+N474,RQ2 budgets,"LongMemEval-S*, levels 3 to 5: MemSwap minus budget-matched mixing (smallest)",4.73,BA:longmemeval_s_star/judge1/budgets/B=10473/random_mixing/diff_pp_memswitch_minus_random,primary,abs2
+N475,RQ2 budgets,"LongMemEval-S*, levels 3 to 5: MemSwap minus budget-matched mixing (largest)",5.03,BA:longmemeval_s_star/judge1/budgets/B=8219/random_mixing/diff_pp_memswitch_minus_random,primary,abs2
+N476,RQ2 budgets,"median p, levels 3 to 5 (largest p, rounded up)",p \le 0.035,BA:longmemeval_s_star/judge1/budgets/B=10473/random_mixing/mcnemar_p_median_vs_memswitch,primary,p_le
+N477,RQ2 budgets,"median p, levels 3 to 5 (smallest p, rounded down)",p \ge 0.089,BA:longmemeval_s_star/judge2/budgets/B=8219/random_mixing/mcnemar_p_median_vs_memswitch,second,p_ge
+N478,RQ2 budgets,"levels 1 to 5 (smallest p, rounded down)",p \ge 0.12,BV:longmemeval_r/judge1/B=9512/mcnemar_p,primary,p_ge
+N479,RQ2 budgets,"LongMemEval-R, fifth level: MemSwap minus best fixed",10.0,BV:longmemeval_r/judge2/B=9512/diff_pp,second,abs1
+N480,RQ2 budgets,LongMemEval-R: fifth level,"9,512",BV:longmemeval_r/judge2/B=9512/budget,second,round_int
+N481,RQ2 budgets,exact McNemar p,p = 0.009,BV:longmemeval_r/judge2/B=9512/mcnemar_p,second,p
+N482,RQ2 budgets,"LongMemEval-R, highest level: fixed iterative search minus MemSwap",5.5,BV:longmemeval_r/judge1/B=10164/diff_pp,primary,abs1
+N483,RQ2 budgets,exact McNemar p,p = 0.071,BV:longmemeval_r/judge1/B=10164/mcnemar_p,primary,p
+N484,RQ2 budgets,"LongMemEval-R, highest level: fixed iterative search minus MemSwap",3.0,BV:longmemeval_r/judge2/B=10164/diff_pp,second,abs1
+N485,RQ2 budgets,exact McNemar p,p = 0.15,BV:longmemeval_r/judge2/B=10164/mcnemar_p,second,p
+N486,RQ2 budgets,"LongMemEval-R, lowest level: MemSwap tokens","7,130",BV:longmemeval_r/judge2/B=6905/memswap_tokens,second,round_int
+N487,RQ2 budgets,LongMemEval-R: lowest level,"6,905",BV:longmemeval_r/judge2/B=6905/budget,second,round_int
+N488,RQ2 drop scenario,LoCoMo drop scenario: budget before the drop and after the return,"5,281",BA:locomo/judge1/budget_drop_scenario/replans/1/B,primary,round_int
+N489,RQ2 drop scenario,LoCoMo drop scenario: lowered budget,"3,168",BA:locomo/judge1/budget_drop_scenario/replans/0/B,primary,round_int
+N490,RQ2 drop scenario,LoCoMo drop scenario: question of the drop,768,BA:locomo/judge1/budget_drop_scenario/replans/0/at,primary,round_int
+N491,RQ2 drop scenario,LoCoMo drop scenario: question of the return,"1,151",BA:locomo/judge1/budget_drop_scenario/replans/1/at,primary,round_int
+N492,RQ2 drop scenario,LoCoMo drop scenario: windows within budget / windows,20/30,BA:locomo/judge1/budget_drop_scenario/windows[kept],primary,text
+N493,RQ2 drop scenario,LoCoMo drop scenario: MemSwap accuracy (%),77.25,BA:locomo/judge1/budget_drop_scenario/memswitch/accuracy,primary,pct2
+N494,RQ2 drop scenario,LoCoMo drop scenario: MemSwap tokens,"4,520",BA:locomo/judge1/budget_drop_scenario/memswitch/mean_memory_tokens,primary,round_int
+N495,RQ2 drop scenario,"LoCoMo, fourth level kept: MemSwap accuracy (%)",79.07,BV:locomo/judge1/B=5281/memswap_accuracy,primary,pct2
+N496,RQ2 drop scenario,"LoCoMo, fourth level kept: MemSwap tokens","4,896",BV:locomo/judge1/B=5281/memswap_tokens,primary,round_int
+N497,RQ2 drop scenario,LoCoMo drop scenario: MemSwap minus fixed planned read,6.91,BA:locomo/judge1/budget_drop_scenario/vs_fixed_planned_read/diff_pp,primary,abs2
+N498,RQ2 drop scenario,exact McNemar p,p < 0.001,BA:locomo/judge1/budget_drop_scenario/vs_fixed_planned_read/mcnemar_p,primary,p
+N499,RQ2 drop scenario,LoCoMo drop scenario: MemSwap minus fixed planned read,8.28,BA:locomo/judge2/budget_drop_scenario/vs_fixed_planned_read/diff_pp,second,abs2
+N500,RQ2 drop scenario,exact McNemar p,p < 0.001,BA:locomo/judge2/budget_drop_scenario/vs_fixed_planned_read/mcnemar_p,second,p
+N501,RQ2 drop scenario,LongMemEval-S* drop scenario: MemSwap accuracy (%),76.25,BA:longmemeval_s_star/judge1/budget_drop_scenario/memswitch/accuracy,primary,pct2
+N502,RQ2 drop scenario,LongMemEval-S* drop scenario: MemSwap tokens,"7,053",BA:longmemeval_s_star/judge1/budget_drop_scenario/memswitch/mean_memory_tokens,primary,round_int
+N503,RQ2 drop scenario,LongMemEval-R drop scenario: MemSwap accuracy (%),75.0,BA:longmemeval_r/judge1/budget_drop_scenario/memswitch/accuracy,primary,pct1
+N504,RQ2 drop scenario,LongMemEval-R drop scenario: MemSwap tokens,"7,085",BA:longmemeval_r/judge1/budget_drop_scenario/memswitch/mean_memory_tokens,primary,round_int
+N505,RQ2 streams,stream 1: replayed questions,953,ST:stream_1/n_stream,-,round_int
+N506,RQ2 streams,stream 1: fixed single lookup accuracy (%),72.19,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/baseline_accuracy",primary,pct2
+N507,RQ2 streams,stream 1: fixed iterative search accuracy (%),77.96,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_accuracy",primary,pct2
+N508,RQ2 streams,stream 1: fixed iterative search tokens,"8,509","ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_mean_memory_tokens",primary,round_int
+N509,RQ2 streams,stream 1: MemSwap (labels) accuracy (%),78.49,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/memswitch/accuracy",primary,pct2
+N510,RQ2 streams,stream 1: MemSwap (labels) tokens,"7,681","ST:stream_1/configs/margin_pp=1,cap=0/judge1/memswitch/mean_memory_tokens",primary,round_int
+N511,RQ2 streams,stream 1: MemSwap (labels) minus fixed iterative search,+0.52,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,signed2
+N512,RQ2 streams,exact McNemar p,p = 0.55,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",primary,p
+N513,RQ2 streams,stream 1: MemSwap (predicted) accuracy (%),78.28,OSS:stream_1/judge1/predicted/accuracy_pct,primary,abs2
+N514,RQ2 streams,stream 1: MemSwap (predicted) tokens,"7,795",OSS:stream_1/judge1/predicted/mean_memory_tokens,primary,round_int
+N515,RQ2 streams,stream 1: predicted minus labels,-0.21,OSS:stream_1/judge1/predicted_vs_labels/diff_pp,primary,signed2
+N516,RQ2 streams,exact McNemar p,p = 0.86,OSS:stream_1/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N517,RQ2 streams,stream 2: replayed questions,"1,714",ST:stream_2/n_stream,-,round_int
+N518,RQ2 streams,stream 2: fixed single lookup accuracy (%),75.67,"ST:stream_2/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/baseline_accuracy",primary,pct2
+N519,RQ2 streams,stream 2: fixed iterative search accuracy (%),78.00,"ST:stream_2/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_accuracy",primary,pct2
+N520,RQ2 streams,stream 2: fixed iterative search tokens,"7,708","ST:stream_2/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_mean_memory_tokens",primary,round_int
+N521,RQ2 streams,stream 2: MemSwap (labels) accuracy (%),78.41,"ST:stream_2/configs/margin_pp=1,cap=0/judge1/memswitch/accuracy",primary,pct2
+N522,RQ2 streams,stream 2: MemSwap (labels) tokens,"7,495","ST:stream_2/configs/margin_pp=1,cap=0/judge1/memswitch/mean_memory_tokens",primary,round_int
+N523,RQ2 streams,stream 2: MemSwap (labels) minus fixed iterative search,+0.41,"ST:stream_2/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,signed2
+N524,RQ2 streams,exact McNemar p,p = 0.092,"ST:stream_2/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",primary,p
+N525,RQ2 streams,stream 2: MemSwap (predicted) accuracy (%),76.55,OSS:stream_2/judge1/predicted/accuracy_pct,primary,abs2
+N526,RQ2 streams,stream 2: MemSwap (predicted) tokens,"6,822",OSS:stream_2/judge1/predicted/mean_memory_tokens,primary,round_int
+N527,RQ2 streams,stream 2: predicted minus labels,-1.87,OSS:stream_2/judge1/predicted_vs_labels/diff_pp,primary,signed2
+N528,RQ2 streams,exact McNemar p,p < 0.001,OSS:stream_2/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N529,RQ2 streams,stream 3: replayed questions,200,ST:stream_3/n_stream,-,round_int
+N530,RQ2 streams,stream 3: fixed single lookup accuracy (%),61.0,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/baseline_accuracy",primary,pct1
+N531,RQ2 streams,stream 3: fixed iterative search accuracy (%),81.5,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_accuracy",primary,pct1
+N532,RQ2 streams,stream 3: fixed iterative search tokens,"10,164","ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_mean_memory_tokens",primary,round_int
+N533,RQ2 streams,stream 3: MemSwap (labels) accuracy (%),81.5,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/memswitch/accuracy",primary,pct1
+N534,RQ2 streams,stream 3: MemSwap (labels) tokens,"10,164","ST:stream_3/configs/margin_pp=1,cap=0/judge1/memswitch/mean_memory_tokens",primary,round_int
+N535,RQ2 streams,stream 3: MemSwap (labels) minus fixed iterative search,0.0,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,pct1
+N536,RQ2 streams,exact McNemar p,p = 1.0,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",primary,p
+N537,RQ2 streams,stream 3: MemSwap (predicted) accuracy (%),79.5,OSS:stream_3/judge1/predicted/accuracy_pct,primary,abs1
+N538,RQ2 streams,stream 3: MemSwap (predicted) tokens,"8,190",OSS:stream_3/judge1/predicted/mean_memory_tokens,primary,round_int
+N539,RQ2 streams,stream 3: predicted minus labels,-2.0,OSS:stream_3/judge1/predicted_vs_labels/diff_pp,primary,signed1
+N540,RQ2 streams,exact McNemar p,p = 0.54,OSS:stream_3/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N541,RQ2 streams,stream 4: replayed questions,"1,601",ST:stream_4/n_stream,-,round_int
+N542,RQ2 streams,stream 4: fixed single lookup accuracy (%),76.89,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/baseline_accuracy",primary,pct2
+N543,RQ2 streams,stream 4: fixed iterative search accuracy (%),78.89,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_accuracy",primary,pct2
+N544,RQ2 streams,stream 4: fixed iterative search tokens,"7,241","ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_mean_memory_tokens",primary,round_int
+N545,RQ2 streams,stream 4: MemSwap (labels) accuracy (%),78.64,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/memswitch/accuracy",primary,pct2
+N546,RQ2 streams,stream 4: MemSwap (labels) tokens,"7,215","ST:stream_4/configs/margin_pp=1,cap=0/judge1/memswitch/mean_memory_tokens",primary,round_int
+N547,RQ2 streams,stream 4: MemSwap (labels) minus fixed iterative search,-0.25,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,signed2
+N548,RQ2 streams,exact McNemar p,p = 0.22,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",primary,p
+N549,RQ2 streams,stream 4: MemSwap (predicted) accuracy (%),78.45,OSS:stream_4/judge1/predicted/accuracy_pct,primary,abs2
+N550,RQ2 streams,stream 4: MemSwap (predicted) tokens,"6,983",OSS:stream_4/judge1/predicted/mean_memory_tokens,primary,round_int
+N551,RQ2 streams,stream 4: predicted minus labels,-0.19,OSS:stream_4/judge1/predicted_vs_labels/diff_pp,primary,signed2
+N552,RQ2 streams,exact McNemar p,p = 0.65,OSS:stream_4/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N553,RQ2 streams,stream 5: replayed questions,"1,153",ST:stream_5/n_stream,-,round_int
+N554,RQ2 streams,stream 5: fixed single lookup accuracy (%),70.25,"ST:stream_5/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/baseline_accuracy",primary,pct2
+N555,RQ2 streams,stream 5: fixed iterative search accuracy (%),78.58,"ST:stream_5/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_accuracy",primary,pct2
+N556,RQ2 streams,stream 5: fixed iterative search tokens,"8,796","ST:stream_5/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_mean_memory_tokens",primary,round_int
+N557,RQ2 streams,stream 5: MemSwap (labels) accuracy (%),79.01,"ST:stream_5/configs/margin_pp=1,cap=0/judge1/memswitch/accuracy",primary,pct2
+N558,RQ2 streams,stream 5: MemSwap (labels) tokens,"8,111","ST:stream_5/configs/margin_pp=1,cap=0/judge1/memswitch/mean_memory_tokens",primary,round_int
+N559,RQ2 streams,stream 5: MemSwap (labels) minus fixed iterative search,+0.43,"ST:stream_5/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,signed2
+N560,RQ2 streams,exact McNemar p,p = 0.55,"ST:stream_5/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",primary,p
+N561,RQ2 streams,stream 5: MemSwap (predicted) accuracy (%),78.66,OSS:stream_5/judge1/predicted/accuracy_pct,primary,abs2
+N562,RQ2 streams,stream 5: MemSwap (predicted) tokens,"8,060",OSS:stream_5/judge1/predicted/mean_memory_tokens,primary,round_int
+N563,RQ2 streams,stream 5: predicted minus labels,-0.35,OSS:stream_5/judge1/predicted_vs_labels/diff_pp,primary,signed2
+N564,RQ2 streams,exact McNemar p,p = 0.64,OSS:stream_5/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N565,RQ2 streams,"streams: MemSwap (labels) minus fixed iterative search, lowest",-0.25,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,signed2
+N566,RQ2 streams,"streams: MemSwap (labels) minus fixed iterative search, highest",+0.52,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/diff_pp",primary,signed2
+N567,RQ2 streams,"five streams (smallest p, rounded down)",p \ge 0.092,"ST:stream_2/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",primary,p_ge
+N568,RQ2 streams,"five streams (smallest p, rounded down)",p \ge 0.17,"ST:stream_1/configs/margin_pp=1,cap=0/judge2/vs_baselines_on_stream_questions/iterative_search/mcnemar_p",second,p_ge
+N569,RQ2 streams,"streams: largest token saving of MemSwap (labels) against fixed iterative search, percent",10,"ST:stream_1/configs/margin_pp=1,cap=0/judge1/memswitch/mean_memory_tokens  /  ST:stream_1/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/iterative_search/baseline_mean_memory_tokens",primary,ratio_fewer_pct
+N570,RQ2 streams,streams: MemSwap (labels) minus fixed single lookup (smallest),1.75,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/diff_pp",primary,abs2
+N571,RQ2 streams,streams: MemSwap (labels) minus fixed single lookup (largest),20.5,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/diff_pp",primary,abs1
+N572,RQ2 streams,exact McNemar p,p = 0.11,"ST:stream_4/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/mcnemar_p",primary,p
+N573,RQ2 streams,exact McNemar p,p = 0.047,"ST:stream_4/configs/margin_pp=1,cap=0/judge2/vs_baselines_on_stream_questions/single_lookup/mcnemar_p",second,p
+N574,RQ2 streams,stream 3: fixed single lookup accuracy (%),61.0,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/vs_baselines_on_stream_questions/single_lookup/baseline_accuracy",primary,pct1
+N575,RQ2 streams,LoCoMo: fixed single lookup accuracy (%),77.44,W:locomo/margin_pp=1/judge1/vs_baselines/single_lookup/baseline_accuracy,primary,pct2
+N576,RQ2 streams,stream 3: MemSwap (labels) accuracy (%),81.5,"ST:stream_3/configs/margin_pp=1,cap=0/judge1/memswitch/accuracy",primary,pct1
+N577,RQ2 streams,stream 2: labels minus predicted,1.87,OSS:stream_2/judge1/predicted_vs_labels/diff_pp,primary,abs2
+N578,RQ2 streams,exact McNemar p,p < 0.001,OSS:stream_2/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N579,RQ2 streams,exact McNemar p,p = 0.65,OSS:stream_4/judge1/predicted_vs_labels/mcnemar_p,primary,p
+N580,RQ2 streams,stream 2: labels minus predicted,7.00,OSS:stream_2/judge2/predicted_vs_labels/diff_pp,second,abs2
+N581,RQ2 streams,exact McNemar p,p < 0.001,OSS:stream_2/judge2/predicted_vs_labels/mcnemar_p,second,p
+N582,RQ2 streams,stream 4: labels minus predicted,1.75,OSS:stream_4/judge2/predicted_vs_labels/diff_pp,second,abs2
+N583,RQ2 streams,exact McNemar p,p = 0.043,OSS:stream_4/judge2/predicted_vs_labels/mcnemar_p,second,p
+N584,RQ2 answer,"largest significant loss with predicted types, primary (answer, one decimal)",1.9,OSS:stream_2/judge1/predicted_vs_labels/diff_pp,primary,abs1
+N585,RQ2 answer,"largest significant loss with predicted types, second (answer, one decimal)",7.0,OSS:stream_2/judge2/predicted_vs_labels/diff_pp,second,abs1
+N586,RQ3,"LoCoMo: Question Classifier, mean ms per question, embedding included",7.5,EF:c_classifier/locomo/total_ms/mean,-,abs1
+N587,RQ3,"LongMemEval-S*: Question Classifier, mean ms per question, embedding included",9.6,EF:c_classifier/longmemeval_s_star/total_ms/mean,-,abs1
+N588,RQ3,"LongMemEval-R: Question Classifier, mean ms per question, embedding included",9.8,EF:c_classifier/longmemeval_r/total_ms/mean,-,abs1
+N590,RQ3,"LoCoMo: one plan of the Plan Optimizer, mean ms",0.08,EF:b_budget_planner/locomo/ms/mean,-,abs2
+N591,RQ3,"LongMemEval-S*: one plan of the Plan Optimizer, mean ms",2.87,EF:b_budget_planner/longmemeval_s_star/ms/mean,-,abs2
+N592,RQ3,"LongMemEval-R: one plan of the Plan Optimizer, mean ms",0.26,EF:b_budget_planner/longmemeval_r/ms/mean,-,abs2
+N593,RQ3,LoCoMo: number of plans tried,81,EF:b_budget_planner/locomo/assignments,-,round_int
+N594,RQ3,LongMemEval-S*: number of plans tried,"2,187",EF:b_budget_planner/longmemeval_s_star/assignments,-,round_int
+N595,RQ3,LongMemEval-R: number of plans tried,243,EF:b_budget_planner/longmemeval_r/assignments,-,round_int
+N596,RQ3,"LoCoMo: one decision of the Mechanism Selector, mean ms",0.22,EF:g_mechanism_selector/locomo/ms/mean,-,abs2
+N597,RQ3,"LongMemEval-S*: one decision of the Mechanism Selector, mean ms",0.16,EF:g_mechanism_selector/longmemeval_s_star/ms/mean,-,abs2
+N598,RQ3,"LongMemEval-R: one decision of the Mechanism Selector, mean ms",0.11,EF:g_mechanism_selector/longmemeval_r/ms/mean,-,abs2
+N599,RQ3,"single lookup: mean answer time, fastest dataset (s)",4.2,EF:a_mechanisms/longmemeval_r|single_lookup/seconds/mean,-,abs1
+N600,RQ3,"single lookup: mean answer time, slowest dataset (s)",12.7,EF:a_mechanisms/locomo|single_lookup/seconds/mean,-,abs1
+N601,RQ3,"planned read: mean answer time, fastest dataset (s)",4.8,EF:a_mechanisms/longmemeval_r|planned_read/seconds/mean,-,abs1
+N602,RQ3,"planned read: mean answer time, slowest dataset (s)",6.4,EF:a_mechanisms/longmemeval_s_star|planned_read/seconds/mean,-,abs1
+N603,RQ3,"iterative search: mean answer time, fastest dataset (s)",11.3,EF:a_mechanisms/locomo|iterative_search/seconds/mean,-,abs1
+N604,RQ3,"iterative search: mean answer time, slowest dataset (s)",14.8,EF:a_mechanisms/longmemeval_s_star|iterative_search/seconds/mean,-,abs1
+N605,RQ3,managing time per question as a share of the fastest mean answer time (%),0.23,NG:latency/share_of_fastest_answer,-,pct2
+N606,RQ3,LoCoMo: memory tokens to profile one question (all three mechanisms),"15,688",EF:d_profiling/locomo/memory_tokens_all_three_mean,-,round_int
+N607,RQ3,LongMemEval-S*: memory tokens to profile one question (all three mechanisms),"23,911",EF:d_profiling/longmemeval_s_star/memory_tokens_all_three_mean,-,round_int
+N608,RQ3,LongMemEval-R: memory tokens to profile one question (all three mechanisms),"23,523",EF:d_profiling/longmemeval_r/memory_tokens_all_three_mean,-,round_int
+N609,RQ3,LoCoMo: profiling tokens beyond answering with iterative search,"8,482",EF:d_profiling/locomo/extra_over_default_mean,-,round_int
+N610,RQ3,LongMemEval-S*: profiling tokens beyond answering with iterative search,"12,311",EF:d_profiling/longmemeval_s_star/extra_over_default_mean,-,round_int
+N611,RQ3,LongMemEval-R: profiling tokens beyond answering with iterative search,"13,359",EF:d_profiling/longmemeval_r/extra_over_default_mean,-,round_int
+N612,RQ3,LoCoMo: primary-judge tokens per profiled question (three verdicts),371,NG:datasets/locomo/judge_tokens_per_profiled_question,-,round_int
+N613,RQ3,LongMemEval-S*: primary-judge tokens per profiled question (three verdicts),489,NG:datasets/longmemeval_s_star/judge_tokens_per_profiled_question,-,round_int
+N614,RQ3,LoCoMo: tokens saved per served question against fixed iterative search,"1,553",NG:datasets/locomo/saving_per_question,-,round_int
+N615,RQ3,LongMemEval-S*: tokens saved per served question against fixed iterative search,"3,895",NG:datasets/longmemeval_s_star/saving_per_question,-,round_int
+N616,RQ3,LongMemEval-R: tokens saved per served question against fixed iterative search,"2,099",NG:datasets/longmemeval_r/saving_per_question,-,round_int
+N617,RQ3,LoCoMo: mean number of questions in the first batch,"1,381",NG:datasets/locomo/first_batch_questions,-,round_int
+N618,RQ3,LongMemEval-S*: mean number of questions in the first batch,239,NG:datasets/longmemeval_s_star/first_batch_questions,-,round_int
+N619,RQ3,LongMemEval-R: mean number of questions in the first batch,133,NG:datasets/longmemeval_r/first_batch_questions,-,round_int
+N620,RQ3,LoCoMo: served questions until the extra profiling tokens are saved (memory tokens only),"7,541",NG:datasets/locomo/a_payback_memory_tokens_only,-,round_int
+N621,RQ3,LongMemEval-S*: served questions until the extra profiling tokens are saved (memory tokens only),756,NG:datasets/longmemeval_s_star/a_payback_memory_tokens_only,-,round_int
+N622,RQ3,LongMemEval-R: served questions until the extra profiling tokens are saved (memory tokens only),849,NG:datasets/longmemeval_r/a_payback_memory_tokens_only,-,round_int
+N623,RQ3,"LoCoMo: served questions until profiling is paid back, judge tokens included","7,871",NG:datasets/locomo/a_payback_with_judge_tokens,-,round_int
+N624,RQ3,"LongMemEval-S*: served questions until profiling is paid back, judge tokens included",786,NG:datasets/longmemeval_s_star/a_payback_with_judge_tokens,-,round_int
+N625,RQ3,LoCoMo: questions,"1,534",W:locomo/margin_pp=1/judge1/memswitch/n,primary,round_int
+N626,RQ3,"largest mean classifier time, rounded (ms)",10,EF:c_classifier/longmemeval_r/total_ms/mean,-,round_int
+N627,RQ3,"payback range in the answer (smallest, largest)","756 to 7,541",NG:datasets/*/a_payback_memory_tokens_only,-,payback_range

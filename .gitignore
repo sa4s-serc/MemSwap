@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+runtime/
+notebooks/executed.ipynb
+results/replay.json
+results/letta_empty_answers.json
+results/predicted_question_types.json
+results/decisions.csv
+results/report.md
+results/stats_verification.csv
+results/tables/
+results/logged/
+.env
+results/time_components.json

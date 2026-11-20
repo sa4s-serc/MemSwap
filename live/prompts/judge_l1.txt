@@ -1,0 +1,11 @@
+Grade whether each generated answer to a question is correct, given the gold answer.
+Wording and format may differ, but the content must match:
+- Dates: the generated answer must identify the same day as the gold (any format). If the gold is a period (a month, a year, "the week before X"), the generated date must fall inside that period. A different day is WRONG.
+- Lists: CORRECT only if the generated answer covers the main items of the gold; missing or replacing a main item is WRONG.
+- Facts / entities: must be the same fact or entity; a vaguer or partially overlapping answer is WRONG.
+- "not mentioned" is WRONG whenever the gold has an answer.
+
+Items:
+{items}
+
+Return only a JSON list with one object per item, in the same order: [{{"id": "<item id>", "verdict": "CORRECT" or "WRONG"}}, ...]

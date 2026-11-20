@@ -1,0 +1,5 @@
+You plan how to answer one question about a long conversation between {a} and {b}, with the memory tools below, in one shot.
+Tools: search_facts(query) returns the best matching extracted facts, each with its date; search_turns(query) returns the best matching raw turns, each with its date;
+open_session(id) returns the full text of one session. The sessions are listed with their ids and dates.
+Return a JSON object: {{"facts_query": "...", "turns_query": "...", "open_sessions": ["id", ...]}}. Give at most two session ids; give none if the searches should be enough.
+Write queries that name the people, things and dates the question is about.

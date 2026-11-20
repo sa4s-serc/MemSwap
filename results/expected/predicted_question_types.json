@@ -1,0 +1,472 @@
+{
+ "config": {
+  "routing": "margin 1 point, cap 0, no budget; a question type without a mechanism in R gets m0",
+  "classifier": "memswap/managed/memory_manager/question_classifier.py fit_predict, trained on the first batch's labels only"
+ },
+ "streams": {
+  "stream_1": {
+   "name": "LoCoMo, then LongMemEval-S*",
+   "n_first_batch": 880,
+   "n_stream": 953,
+   "known_question_types": [
+    "locomo|multi-hop",
+    "locomo|open-domain",
+    "locomo|single-hop",
+    "locomo|temporal"
+   ],
+   "predicted_type_correct_on_known_pct": 75.23,
+   "judge1": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 78.49,
+     "mean_memory_tokens": 7680.7
+    },
+    "predicted": {
+     "accuracy_pct": 78.28,
+     "mean_memory_tokens": 7795.4
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -0.21,
+     "mcnemar_p": 0.8641662404406816,
+     "first_only_correct": 16,
+     "second_only_correct": 18
+    },
+    "new_type_questions_only": {
+     "n": 299,
+     "labels": {
+      "accuracy_pct": 73.24,
+      "mean_memory_tokens": 11599.9
+     },
+     "predicted": {
+      "accuracy_pct": 73.58,
+      "mean_memory_tokens": 10942.6
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 299
+     },
+     "predicted": {
+      "single_lookup": 23,
+      "planned_read": 0,
+      "iterative_search": 276
+     }
+    }
+   },
+   "judge2": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 78.59,
+     "mean_memory_tokens": 7536.7
+    },
+    "predicted": {
+     "accuracy_pct": 77.75,
+     "mean_memory_tokens": 7490.6
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -0.84,
+     "mcnemar_p": 0.3317497633694906,
+     "first_only_correct": 22,
+     "second_only_correct": 30
+    },
+    "new_type_questions_only": {
+     "n": 299,
+     "labels": {
+      "accuracy_pct": 73.24,
+      "mean_memory_tokens": 11599.9
+     },
+     "predicted": {
+      "accuracy_pct": 72.58,
+      "mean_memory_tokens": 10189.9
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 299
+     },
+     "predicted": {
+      "single_lookup": 65,
+      "planned_read": 0,
+      "iterative_search": 234
+     }
+    }
+   }
+  },
+  "stream_2": {
+   "name": "LongMemEval-S*, then LoCoMo",
+   "n_first_batch": 119,
+   "n_stream": 1714,
+   "known_question_types": [
+    "lme|abstention",
+    "lme|k-update",
+    "lme|multi-session",
+    "lme|ss-assistant",
+    "lme|ss-preference",
+    "lme|ss-user",
+    "lme|temporal"
+   ],
+   "predicted_type_correct_on_known_pct": 73.33,
+   "judge1": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 78.41,
+     "mean_memory_tokens": 7495.3
+    },
+    "predicted": {
+     "accuracy_pct": 76.55,
+     "mean_memory_tokens": 6821.6
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -1.87,
+     "mcnemar_p": 3.3052667092192682e-06,
+     "first_only_correct": 8,
+     "second_only_correct": 40
+    },
+    "new_type_questions_only": {
+     "n": 1534,
+     "labels": {
+      "accuracy_pct": 78.68,
+      "mean_memory_tokens": 7205.4
+     },
+     "predicted": {
+      "accuracy_pct": 76.79,
+      "mean_memory_tokens": 6422.7
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 1534
+     },
+     "predicted": {
+      "single_lookup": 0,
+      "planned_read": 200,
+      "iterative_search": 1334
+     }
+    }
+   },
+   "judge2": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 78.65,
+     "mean_memory_tokens": 7347.9
+    },
+    "predicted": {
+     "accuracy_pct": 71.65,
+     "mean_memory_tokens": 3939.3
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -7.0,
+     "mcnemar_p": 7.18790391114019e-15,
+     "first_only_correct": 62,
+     "second_only_correct": 182
+    },
+    "new_type_questions_only": {
+     "n": 1534,
+     "labels": {
+      "accuracy_pct": 79.2,
+      "mean_memory_tokens": 7205.4
+     },
+     "predicted": {
+      "accuracy_pct": 71.58,
+      "mean_memory_tokens": 3359.6
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 1534
+     },
+     "predicted": {
+      "single_lookup": 0,
+      "planned_read": 1246,
+      "iterative_search": 288
+     }
+    }
+   }
+  },
+  "stream_3": {
+   "name": "LoCoMo, then LongMemEval-R",
+   "n_first_batch": 1534,
+   "n_stream": 200,
+   "known_question_types": [
+    "locomo|multi-hop",
+    "locomo|open-domain",
+    "locomo|single-hop",
+    "locomo|temporal"
+   ],
+   "predicted_type_correct_on_known_pct": null,
+   "judge1": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 81.5,
+     "mean_memory_tokens": 10163.9
+    },
+    "predicted": {
+     "accuracy_pct": 79.5,
+     "mean_memory_tokens": 8190.0
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -2.0,
+     "mcnemar_p": 0.5412561893463135,
+     "first_only_correct": 10,
+     "second_only_correct": 14
+    },
+    "new_type_questions_only": {
+     "n": 200,
+     "labels": {
+      "accuracy_pct": 81.5,
+      "mean_memory_tokens": 10163.9
+     },
+     "predicted": {
+      "accuracy_pct": 79.5,
+      "mean_memory_tokens": 8190.0
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 200
+     },
+     "predicted": {
+      "single_lookup": 66,
+      "planned_read": 0,
+      "iterative_search": 134
+     }
+    }
+   },
+   "judge2": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 82.0,
+     "mean_memory_tokens": 10163.9
+    },
+    "predicted": {
+     "accuracy_pct": 79.0,
+     "mean_memory_tokens": 9018.2
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -3.0,
+     "mcnemar_p": 0.1795654296875,
+     "first_only_correct": 4,
+     "second_only_correct": 10
+    },
+    "new_type_questions_only": {
+     "n": 200,
+     "labels": {
+      "accuracy_pct": 82.0,
+      "mean_memory_tokens": 10163.9
+     },
+     "predicted": {
+      "accuracy_pct": 79.0,
+      "mean_memory_tokens": 9018.2
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 200
+     },
+     "predicted": {
+      "single_lookup": 28,
+      "planned_read": 0,
+      "iterative_search": 172
+     }
+    }
+   }
+  },
+  "stream_4": {
+   "name": "LongMemEval-R, then LoCoMo",
+   "n_first_batch": 133,
+   "n_stream": 1601,
+   "known_question_types": [
+    "lme|k-update",
+    "lme|multi-session",
+    "lme|ss-assistant",
+    "lme|ss-user",
+    "lme|temporal"
+   ],
+   "predicted_type_correct_on_known_pct": 70.15,
+   "judge1": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 78.64,
+     "mean_memory_tokens": 7215.5
+    },
+    "predicted": {
+     "accuracy_pct": 78.45,
+     "mean_memory_tokens": 6982.9
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -0.19,
+     "mcnemar_p": 0.6476058959960938,
+     "first_only_correct": 8,
+     "second_only_correct": 11
+    },
+    "new_type_questions_only": {
+     "n": 1534,
+     "labels": {
+      "accuracy_pct": 78.68,
+      "mean_memory_tokens": 7205.4
+     },
+     "predicted": {
+      "accuracy_pct": 78.23,
+      "mean_memory_tokens": 6941.9
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 1534
+     },
+     "predicted": {
+      "single_lookup": 0,
+      "planned_read": 87,
+      "iterative_search": 1447
+     }
+    }
+   },
+   "judge2": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 79.08,
+     "mean_memory_tokens": 7207.1
+    },
+    "predicted": {
+     "accuracy_pct": 77.33,
+     "mean_memory_tokens": 6772.3
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -1.75,
+     "mcnemar_p": 0.04269434685440968,
+     "first_only_correct": 75,
+     "second_only_correct": 103
+    },
+    "new_type_questions_only": {
+     "n": 1534,
+     "labels": {
+      "accuracy_pct": 79.2,
+      "mean_memory_tokens": 7205.4
+     },
+     "predicted": {
+      "accuracy_pct": 77.38,
+      "mean_memory_tokens": 6739.3
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 1534
+     },
+     "predicted": {
+      "single_lookup": 1031,
+      "planned_read": 0,
+      "iterative_search": 503
+     }
+    }
+   }
+  },
+  "stream_5": {
+   "name": "LoCoMo, then LongMemEval-S* and LongMemEval-R",
+   "n_first_batch": 880,
+   "n_stream": 1153,
+   "known_question_types": [
+    "locomo|multi-hop",
+    "locomo|open-domain",
+    "locomo|single-hop",
+    "locomo|temporal"
+   ],
+   "predicted_type_correct_on_known_pct": 75.23,
+   "judge1": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 79.01,
+     "mean_memory_tokens": 8111.4
+    },
+    "predicted": {
+     "accuracy_pct": 78.66,
+     "mean_memory_tokens": 8060.1
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -0.35,
+     "mcnemar_p": 0.6358280026288412,
+     "first_only_correct": 18,
+     "second_only_correct": 22
+    },
+    "new_type_questions_only": {
+     "n": 499,
+     "labels": {
+      "accuracy_pct": 76.55,
+      "mean_memory_tokens": 11024.3
+     },
+     "predicted": {
+      "accuracy_pct": 76.35,
+      "mean_memory_tokens": 10292.8
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 499
+     },
+     "predicted": {
+      "single_lookup": 40,
+      "planned_read": 0,
+      "iterative_search": 459
+     }
+    }
+   },
+   "judge2": {
+    "default_m0": "iterative_search",
+    "labels": {
+     "accuracy_pct": 79.18,
+     "mean_memory_tokens": 7992.4
+    },
+    "predicted": {
+     "accuracy_pct": 78.32,
+     "mean_memory_tokens": 7644.6
+    },
+    "predicted_vs_labels": {
+     "diff_pp": -0.87,
+     "mcnemar_p": 0.281978921793656,
+     "first_only_correct": 30,
+     "second_only_correct": 40
+    },
+    "new_type_questions_only": {
+     "n": 499,
+     "labels": {
+      "accuracy_pct": 76.75,
+      "mean_memory_tokens": 11024.3
+     },
+     "predicted": {
+      "accuracy_pct": 75.95,
+      "mean_memory_tokens": 9463.9
+     }
+    },
+    "mechanism_of_new_type_questions": {
+     "labels": {
+      "single_lookup": 0,
+      "planned_read": 0,
+      "iterative_search": 499
+     },
+     "predicted": {
+      "single_lookup": 120,
+      "planned_read": 0,
+      "iterative_search": 379
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,570 @@
+{
+ "description": "Measured timings and logged token counts behind RQ3. Measured once; not recomputed by reproduce.py.",
+ "a_mechanisms": {
+  "locomo|single_lookup": {
+   "seconds": {
+    "n": 1534,
+    "mean": 12.671173402868318,
+    "median": 11.545,
+    "p95": 21.75
+   },
+   "model_calls_low": {
+    "n": 1534,
+    "mean": 1,
+    "median": 1.0,
+    "p95": 1
+   },
+   "model_calls_high": {
+    "n": 1534,
+    "mean": 1,
+    "median": 1.0,
+    "p95": 1
+   },
+   "answered_by_known": 0,
+   "input_tokens": {
+    "n": 1534,
+    "mean": 6088.9915254237285,
+    "median": 6103.0,
+    "p95": 6334.0
+   },
+   "output_tokens": {
+    "n": 1534,
+    "mean": 226.21186440677965,
+    "median": 204.5,
+    "p95": 409.0
+   }
+  },
+  "locomo|planned_read": {
+   "seconds": {
+    "n": 1534,
+    "mean": 5.936245110821382,
+    "median": 5.7,
+    "p95": 11.0
+   },
+   "model_calls_low": {
+    "n": 1534,
+    "mean": 2,
+    "median": 2.0,
+    "p95": 2
+   },
+   "model_calls_high": {
+    "n": 1534,
+    "mean": 2,
+    "median": 2.0,
+    "p95": 2
+   },
+   "answered_by_known": 0,
+   "input_tokens": null,
+   "output_tokens": {
+    "n": 1534,
+    "mean": 271.1232073011734,
+    "median": 252.0,
+    "p95": 443.0
+   }
+  },
+  "locomo|iterative_search": {
+   "seconds": {
+    "n": 1534,
+    "mean": 11.329335071707954,
+    "median": 9.0,
+    "p95": 26.9
+   },
+   "model_calls_low": {
+    "n": 1534,
+    "mean": 4.42503259452412,
+    "median": 4.0,
+    "p95": 9
+   },
+   "model_calls_high": {
+    "n": 1534,
+    "mean": 4.42503259452412,
+    "median": 4.0,
+    "p95": 9
+   },
+   "answered_by_known": 1534,
+   "input_tokens": null,
+   "output_tokens": {
+    "n": 1534,
+    "mean": 265.41981747066495,
+    "median": 199.0,
+    "p95": 602.0
+   }
+  },
+  "longmemeval_s_star|single_lookup": {
+   "seconds": {
+    "n": 299,
+    "mean": 4.902742474916388,
+    "median": 3.45,
+    "p95": 10.35
+   },
+   "model_calls_low": {
+    "n": 299,
+    "mean": 1,
+    "median": 1,
+    "p95": 1
+   },
+   "model_calls_high": {
+    "n": 299,
+    "mean": 1,
+    "median": 1,
+    "p95": 1
+   },
+   "answered_by_known": 0,
+   "input_tokens": {
+    "n": 299,
+    "mean": 6345.648829431439,
+    "median": 6343.0,
+    "p95": 6390.0
+   },
+   "output_tokens": {
+    "n": 299,
+    "mean": 223.54515050167225,
+    "median": 191.0,
+    "p95": 463.0
+   }
+  },
+  "longmemeval_s_star|planned_read": {
+   "seconds": {
+    "n": 299,
+    "mean": 6.401003344481605,
+    "median": 6.2,
+    "p95": 12.0
+   },
+   "model_calls_low": {
+    "n": 299,
+    "mean": 2,
+    "median": 2,
+    "p95": 2
+   },
+   "model_calls_high": {
+    "n": 299,
+    "mean": 2,
+    "median": 2,
+    "p95": 2
+   },
+   "answered_by_known": 0,
+   "input_tokens": null,
+   "output_tokens": {
+    "n": 299,
+    "mean": 272.23745819397993,
+    "median": 246.0,
+    "p95": 485.0
+   }
+  },
+  "longmemeval_s_star|iterative_search": {
+   "seconds": {
+    "n": 299,
+    "mean": 14.821739130434782,
+    "median": 12.3,
+    "p95": 31.6
+   },
+   "model_calls_low": {
+    "n": 299,
+    "mean": 5.1806020066889635,
+    "median": 4,
+    "p95": 9
+   },
+   "model_calls_high": {
+    "n": 299,
+    "mean": 5.1806020066889635,
+    "median": 4,
+    "p95": 9
+   },
+   "answered_by_known": 299,
+   "input_tokens": null,
+   "output_tokens": {
+    "n": 299,
+    "mean": 353.0635451505017,
+    "median": 307.0,
+    "p95": 694.0
+   }
+  },
+  "longmemeval_r|single_lookup": {
+   "seconds": {
+    "n": 200,
+    "mean": 4.24255,
+    "median": 2.69,
+    "p95": 13.19
+   },
+   "model_calls_low": {
+    "n": 200,
+    "mean": 1,
+    "median": 1.0,
+    "p95": 1
+   },
+   "model_calls_high": {
+    "n": 200,
+    "mean": 1,
+    "median": 1.0,
+    "p95": 1
+   },
+   "answered_by_known": 0,
+   "input_tokens": {
+    "n": 200,
+    "mean": 6453.93,
+    "median": 6345.0,
+    "p95": 7642.0
+   },
+   "output_tokens": {
+    "n": 200,
+    "mean": 205.005,
+    "median": 185.5,
+    "p95": 386.0
+   }
+  },
+  "longmemeval_r|planned_read": {
+   "seconds": {
+    "n": 200,
+    "mean": 4.811,
+    "median": 4.1,
+    "p95": 10.6
+   },
+   "model_calls_low": {
+    "n": 200,
+    "mean": 2,
+    "median": 2.0,
+    "p95": 2
+   },
+   "model_calls_high": {
+    "n": 200,
+    "mean": 2,
+    "median": 2.0,
+    "p95": 2
+   },
+   "answered_by_known": 200,
+   "input_tokens": {
+    "n": 200,
+    "mean": 6904.875,
+    "median": 6640.5,
+    "p95": 8365.0
+   },
+   "output_tokens": {
+    "n": 200,
+    "mean": 252.75,
+    "median": 229.5,
+    "p95": 417.0
+   }
+  },
+  "longmemeval_r|iterative_search": {
+   "seconds": {
+    "n": 200,
+    "mean": 14.3405,
+    "median": 11.649999999999999,
+    "p95": 35.8
+   },
+   "model_calls_low": {
+    "n": 200,
+    "mean": 4.94,
+    "median": 4.0,
+    "p95": 9
+   },
+   "model_calls_high": {
+    "n": 200,
+    "mean": 4.94,
+    "median": 4.0,
+    "p95": 9
+   },
+   "answered_by_known": 200,
+   "input_tokens": {
+    "n": 200,
+    "mean": 10163.915,
+    "median": 6301.5,
+    "p95": 25193.0
+   },
+   "output_tokens": {
+    "n": 200,
+    "mean": 312.975,
+    "median": 260.5,
+    "p95": 603.0
+   }
+  }
+ },
+ "consistency": {
+  "locomo|single_lookup": {
+   "questions": 1534,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "locomo|planned_read": {
+   "questions": 1534,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "locomo|iterative_search": {
+   "questions": 1534,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "longmemeval_s_star|single_lookup": {
+   "questions": 299,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "longmemeval_s_star|planned_read": {
+   "questions": 299,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "longmemeval_s_star|iterative_search": {
+   "questions": 299,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "longmemeval_r|single_lookup": {
+   "questions": 200,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "longmemeval_r|planned_read": {
+   "questions": 200,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  },
+  "longmemeval_r|iterative_search": {
+   "questions": 200,
+   "missing_in_raw": 0,
+   "memory_token_mismatches": 0
+  }
+ },
+ "b_budget_planner": {
+  "locomo": {
+   "types": 4,
+   "assignments": 81,
+   "ms": {
+    "n": 1200,
+    "mean": 0.083483525,
+    "median": 0.0912355,
+    "p95": 0.117382
+   },
+   "budgets_timed": 6,
+   "repetitions": 200
+  },
+  "longmemeval_s_star": {
+   "types": 7,
+   "assignments": 2187,
+   "ms": {
+    "n": 1200,
+    "mean": 2.8655224408333333,
+    "median": 3.2882575,
+    "p95": 3.325153
+   },
+   "budgets_timed": 6,
+   "repetitions": 200
+  },
+  "longmemeval_r": {
+   "types": 5,
+   "assignments": 243,
+   "ms": {
+    "n": 1200,
+    "mean": 0.2591881825,
+    "median": 0.29404300000000005,
+    "p95": 0.313103
+   },
+   "budgets_timed": 6,
+   "repetitions": 200
+  }
+ },
+ "c_classifier": {
+  "torch_threads": 6,
+  "locomo": {
+   "embedding_ms": {
+    "n": 200,
+    "mean": 6.388111905,
+    "median": 6.393604,
+    "p95": 6.799808
+   },
+   "tfidf_lr_ms": {
+    "n": 200,
+    "mean": 1.08337589,
+    "median": 1.0792205,
+    "p95": 1.127551
+   },
+   "total_ms": {
+    "n": 200,
+    "mean": 7.471487795,
+    "median": 7.470929,
+    "p95": 7.927388
+   },
+   "min_cosine_to_cached_embedding": 0.9999998807907104,
+   "llm_tokens": 0
+  },
+  "longmemeval_s_star": {
+   "embedding_ms": {
+    "n": 200,
+    "mean": 8.40235121,
+    "median": 8.153906,
+    "p95": 10.203142
+   },
+   "tfidf_lr_ms": {
+    "n": 200,
+    "mean": 1.16835578,
+    "median": 1.154941,
+    "p95": 1.299233
+   },
+   "total_ms": {
+    "n": 200,
+    "mean": 9.57070699,
+    "median": 9.2998925,
+    "p95": 11.447483
+   },
+   "min_cosine_to_cached_embedding": 0.9999998807907104,
+   "llm_tokens": 0
+  },
+  "longmemeval_r": {
+   "embedding_ms": {
+    "n": 200,
+    "mean": 8.56263874,
+    "median": 8.328532,
+    "p95": 10.540525
+   },
+   "tfidf_lr_ms": {
+    "n": 200,
+    "mean": 1.19243719,
+    "median": 1.170461,
+    "p95": 1.343603
+   },
+   "total_ms": {
+    "n": 200,
+    "mean": 9.75507593,
+    "median": 9.493744,
+    "p95": 11.846697
+   },
+   "min_cosine_to_cached_embedding": 0.9999998807907104,
+   "llm_tokens": 0
+  }
+ },
+ "d_profiling": {
+  "locomo": {
+   "memory_tokens_all_three_mean": 15687.670143415906,
+   "memory_tokens_default_mean": 7205.363102998696,
+   "extra_over_default_mean": 8482.30704041721,
+   "extra_over_default_ratio": 2.1772213168392693
+  },
+  "longmemeval_s_star": {
+   "memory_tokens_all_three_mean": 23910.789297658863,
+   "memory_tokens_default_mean": 11599.882943143813,
+   "extra_over_default_mean": 12310.90635451505,
+   "extra_over_default_ratio": 2.0612957402118863
+  },
+  "longmemeval_r": {
+   "memory_tokens_all_three_mean": 23522.72,
+   "memory_tokens_default_mean": 10163.915,
+   "extra_over_default_mean": 13358.805,
+   "extra_over_default_ratio": 2.314336552401314
+  }
+ },
+ "d_judge_primary": {
+  "locomo": {
+   "batched_calls": 285,
+   "verdicts_in_cache": 8986,
+   "items_per_call": 32,
+   "input_tokens_per_call_mean": 2966.694736842105,
+   "output_tokens_per_call_mean": 934.8912280701754,
+   "seconds_per_call_mean": 22.694245614035086,
+   "input_tokens_per_verdict_est": 94.09169819719564,
+   "output_tokens_per_verdict_est": 29.651012686401067
+  },
+  "longmemeval_s_star": {
+   "batched_calls": 60,
+   "verdicts_in_cache": 1861,
+   "items_per_call": 32,
+   "input_tokens_per_call_mean": 4029.4666666666667,
+   "output_tokens_per_call_mean": 1028.6833333333334,
+   "seconds_per_call_mean": 13.36725,
+   "input_tokens_per_verdict_est": 129.91295002686726,
+   "output_tokens_per_verdict_est": 33.16550241805481
+  }
+ },
+ "d_judge_calls_per_profiled_question": {
+  "one_judge_verdicts": 3,
+  "two_judges_verdicts": 6,
+  "note": "verdicts are batched 32 per call in our runs"
+ },
+ "f_batch_payback": {
+  "locomo": {
+   "memswap_tokens_per_question": 5652.400260756193,
+   "saving_per_question_vs_fixed_is": 1552.962842242503,
+   "first_batch_questions_mean_loco": 1380.6,
+   "types": 4,
+   "batch_extra_tokens_full_fold": 11710673.1,
+   "payback_questions_full_fold": 7540.85853277056,
+   "batch_extra_tokens_100_per_type": 3392922.8161668843,
+   "payback_questions_100_per_type": 2184.8061807244853,
+   "note": "100 per type ignores types with fewer than 100 questions; extra tokens use the dataset-wide mean"
+  },
+  "longmemeval_s_star": {
+   "memswap_tokens_per_question": 7704.903010033445,
+   "saving_per_question_vs_fixed_is": 3894.9799331103686,
+   "first_batch_questions_mean_loco": 239.2,
+   "types": 7,
+   "batch_extra_tokens_full_fold": 2944768.8,
+   "payback_questions_full_fold": 756.0420979238345,
+   "batch_extra_tokens_100_per_type": 8617634.448160535,
+   "payback_questions_100_per_type": 2212.4977782052015,
+   "note": "100 per type ignores types with fewer than 100 questions; extra tokens use the dataset-wide mean"
+  },
+  "longmemeval_r": {
+   "memswap_tokens_per_question": 8065.31,
+   "saving_per_question_vs_fixed_is": 2098.6050000000005,
+   "first_batch_questions_mean_loco": 133.33333333333334,
+   "types": 5,
+   "batch_extra_tokens_full_fold": 1781174.0000000002,
+   "payback_questions_full_fold": 848.7419023589479,
+   "batch_extra_tokens_100_per_type": 6679402.5,
+   "payback_questions_100_per_type": 3182.782133846054,
+   "note": "100 per type ignores types with fewer than 100 questions; extra tokens use the dataset-wide mean"
+  }
+ },
+ "e_decision_time": {
+  "known_type_us": {
+   "mean": 0.5008368705035972,
+   "p95": 0.6,
+   "n": 16680
+  },
+  "new_type_us": {
+   "mean": 0.45020359075258237,
+   "p95": 0.53,
+   "n": 40660
+  },
+  "reps": 20,
+  "machine": "x86_64",
+  "python": "3.12.14",
+  "note": "margin 1, profiling cap 0, streams 1-3, 20 repetitions; excludes the classifier and the mechanisms"
+ },
+ "machine": {
+  "cpu": "AMD Ryzen 5 9600X",
+  "python": "3.12.14"
+ },
+ "g_mechanism_selector": {
+  "note": "checks/selector_time.py: one call of select() per fold and question type of the first batch, margin 1 point, primary judge, 200 repetitions each; excludes profiling (the mechanisms and the judge)",
+  "python": "3.12.14",
+  "reps": 200,
+  "locomo": {
+   "decisions": 40,
+   "ms": {
+    "n": 8000,
+    "mean": 0.219251646875,
+    "median": 0.2017515,
+    "p95": 0.28400545
+   }
+  },
+  "longmemeval_s_star": {
+   "decisions": 35,
+   "ms": {
+    "n": 7000,
+    "mean": 0.16116948185714286,
+    "median": 0.1163715,
+    "p95": 0.2228779999999999
+   }
+  },
+  "longmemeval_r": {
+   "decisions": 15,
+   "ms": {
+    "n": 3000,
+    "mean": 0.11342334766666666,
+    "median": 0.110331,
+    "p95": 0.12214249999999995
+   }
+  }
+ }
+}

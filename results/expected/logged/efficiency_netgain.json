@@ -1,0 +1,38 @@
+{
+ "description": "Token savings and payback, computed from efficiency.json and the replay results.",
+ "datasets": {
+  "locomo": {
+   "first_batch_questions": 1380.6,
+   "saving_per_question": 1552.962842242503,
+   "a_payback_memory_tokens_only": 7540.85853277056,
+   "judge_tokens_per_profiled_question": 371.22813265079014,
+   "a_payback_with_judge_tokens": 7870.884175365844,
+   "b_payback_fair_accounting": 0,
+   "b_note": "a design-time choice made on evidence also profiles the first batch: same one-off cost"
+  },
+  "longmemeval_s_star": {
+   "first_batch_questions": 239.2,
+   "saving_per_question": 3894.9799331103686,
+   "a_payback_memory_tokens_only": 756.0420979238345,
+   "judge_tokens_per_profiled_question": 489.23535733476626,
+   "a_payback_with_judge_tokens": 786.087207137279,
+   "b_payback_fair_accounting": 0,
+   "b_note": "a design-time choice made on evidence also profiles the first batch: same one-off cost"
+  },
+  "longmemeval_r": {
+   "first_batch_questions": 133.33333333333334,
+   "saving_per_question": 2098.6050000000005,
+   "a_payback_memory_tokens_only": 848.7419023589479,
+   "a_payback_with_judge_tokens": null,
+   "judge_note": "no judge usage logged for this dataset",
+   "b_payback_fair_accounting": 0,
+   "b_note": "a design-time choice made on evidence also profiles the first batch: same one-off cost"
+  }
+ },
+ "latency": {
+  "answer_seconds_mean_min": 4.24255,
+  "answer_seconds_mean_max": 14.821739130434782,
+  "managing_ms_per_question_max": 9.755526133590752,
+  "share_of_fastest_answer": 0.0022993425958444808
+ }
+}

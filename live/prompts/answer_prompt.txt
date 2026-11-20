@@ -1,0 +1,13 @@
+You answer one question about a long conversation between {a} and {b}. Below are memories that a memory system extracted from that conversation, in date order; each line starts with the date of the session it came from. The last session took place on {last_date}.
+
+Work in three short steps, then give the answer.
+1. Collect: read every memory and list the ones that bear on the question, with their dates. Details are often spread over several memories, so do not stop at the first match.
+2. Resolve: combine the collected memories. Check the memory is about the right person. For a list or a count, enumerate every distinct item. For a date, use the dates in the memories and resolve words like "last week" against the session date; for "how long" or "how long ago", compute from the dates. Prefer the most specific detail (a name, a number, a place) over a general one.
+3. Answer: give one direct answer with the specific details in it. Do not say "not mentioned" or "not specified" when any memory bears on the question; answer from the best evidence. Do not invent names, places or dates that no memory states.
+
+Memories:
+{memories}
+
+Question: {question}
+
+Write steps 1 to 3 briefly, then the final answer on its own line after "ANSWER:".

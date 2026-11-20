@@ -1,0 +1,85 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "search_turns",
+      "description": "Search the raw conversation turns (exact messages with dates). Returns the 8 most similar turns.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "search_facts",
+      "description": "Search the extracted facts the memory system distilled from the conversation (each with the date of its session). Returns the 8 best matches.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_sessions",
+      "description": "List the conversation's sessions: id, date and first line.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "open_session",
+      "description": "Read one whole session transcript by its id (e.g. 'session_3').",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "session_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "session_id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "answer",
+      "description": "Give the final answer and stop.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    }
+  }
+]

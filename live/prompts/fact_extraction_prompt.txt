@@ -1,0 +1,16 @@
+SYSTEM:
+You extract facts from one dated session of a conversation between two people, for a memory that will answer questions months later.
+Write each fact as one standalone sentence that names the person and states the fact with absolute dates: resolve relative time words (yesterday, last weekend, next month, this summer, two years ago) against the session date.
+Keep every fact a later question could ask about: events and when they happened, people, places, things, numbers, preferences, plans, feelings and their reasons, what someone shared or showed (images are described in brackets).
+Merge what one speaker says across the session into complete facts; do not split one event into fragments and do not write a fact for greetings, thanks, or small talk.
+Use the earlier facts only to resolve references (who "she" is, which trip); do not repeat them.
+Return a JSON object {"facts": [{"turn": "<id of the turn the fact comes from>", "fact": "..."}]}.
+
+USER:
+Session date: {date}
+Speakers: {a} and {b}
+Earlier facts about them (context only):
+{earlier}
+
+Session transcript (each line: turn id, speaker, message):
+{transcript}
