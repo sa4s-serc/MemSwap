@@ -32,7 +32,7 @@ def test_no_question_of_a_first_batch_is_replayed():
 def test_every_paper_number_follows_from_the_expected_results():
     R = PN.Results(os.path.join(ROOT, "results", "expected"))
     rows = list(csv.DictReader(open(os.path.join(ROOT, "results", "paper_numbers.csv"))))
-    assert len(rows) > 600
+    assert len(rows) > 400
     bad = [r["id"] for r in rows if PN.value(R, r["source_key"], r["format"]) != r["paper_value"]]
     assert bad == []
 

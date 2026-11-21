@@ -4,7 +4,9 @@
 
 **Replication package**
 
-AUTHORS_TO_FILL_IN
+Sreemaee Akshathala · Karthik Vaidhyanathan
+
+Software Engineering Research Center (SERC), IIIT Hyderabad, India
 
 <!-- Badges: add once available
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
@@ -32,17 +34,21 @@ request path; <code>log</code> is its sensor and <code>update</code> its effecto
 
 ## Abstract
 
-LLM agents that serve the same user for months must read a memory of past conversations, and memory systems fix
-their reading mechanism at design time. No fixed choice suits every question. A single lookup matches an iterative
-search on many question types with fewer tokens, but on questions about the agent's own earlier replies, it answers
-one in five where the search answers all. Which questions arrive, and how many tokens the memory may spend, change at
-runtime. We present MemSwap, a self-adaptive architecture that chooses the reading mechanism at runtime. Its
-Monitor-Analyze-Plan-Execute loop over shared Knowledge (MAPE-K) profiles each mechanism per question type, routes
-each question type to its most accurate mechanism, or to a cheaper one when profiling shows with confidence that it is
-almost as accurate, and re-plans when the token budget changes. Under most token budgets on LoCoMo, MemSwap is 2.6 to
-8.7 points more accurate than the best fixed mechanism that fits. On LoCoMo and LongMemEval, it matches the most
-accurate fixed mechanism with 21–34% fewer tokens, Letta with 74–83% fewer, and Mem0 with 7–24% fewer tokens. When
-the workload shifts, it keeps its accuracy while a fixed lookup falls from 77% to 61%.
+LLM agents increasingly rely on memory to recall earlier interactions when they answer new queries. How an agent reads
+this memory determines both the accuracy of its answers and the tokens it spends. However, these agents operate under
+runtime uncertainties, such as unpredictable tasks and fluctuating token budgets, and no single way of reading memory
+suits every type of question. Existing memory systems fix how they read memory at design time, and therefore either
+overspend on questions that a cheap lookup could answer, or fail those that need a deeper search. To address this, we
+introduce MemSwap, a self-adaptive approach that enables runtime selection of memory reading mechanisms in LLM agents
+using a MAPE-K loop. MemSwap allows system architects to define an accuracy margin and a token budget, and performs
+runtime monitoring of the types of arriving questions and of the accuracy and cost of each mechanism, to plan which
+mechanism each question type should use. We evaluate the effectiveness and efficiency of MemSwap on two standard long-
+conversation benchmarks, LoCoMo and LongMemEval, against two established memory systems, Mem0 and Letta, and five
+fixed memory mechanisms. Our results show that MemSwap is on par with, or more accurate than every baseline, while
+using 7% to 24% fewer tokens than Mem0 and 74% to 83% fewer tokens than Letta. Under most token budgets on LoCoMo, it
+is 2.6 to 8.7 points more accurate than the best fixed mechanism that fits, and it maintains its accuracy when the
+workload shifts, with under 10 ms of overhead per answer. These results point to self-adaptation as a promising
+approach for managing memory in agentic AI systems.
 
 **Index Terms:** software architecture, self-adaptive systems, MAPE-K, LLM agents, agent memory, runtime adaptation
 
@@ -65,6 +71,65 @@ the workload shifts, it keeps its accuracy while a fixed lookup falls from 77% t
 | RQ2 | 2.6 to 8.7 points more accurate than the best fixed mechanism that fits, at four of six token budgets on LoCoMo | `results/replay.json` (budgets) |
 | RQ2 | Keeps its accuracy when the workload shifts, while a fixed single lookup falls from 77% to 61% | `results/replay.json` (streams), `results/predicted_question_types.json` |
 | RQ3 | Under 10 ms and no tokens per question on the request path; profiling is repaid after 756 to 7,541 served questions | `results/expected/logged/` |
+
+## Using MemSwap
+
+There are three ways to use this package, from checking the paper to running MemSwap in front of your own agent.
+
+### 1. Reproduce the paper (no model, no API key)
+
+```bash
+python reproduce.py            # every table and number of the paper, PASS / FAIL per number, about 2 minutes
+```
+
+See [Reproducing the Results](#reproducing-the-results) for the other checks.
+
+### 2. Replay MemSwap on your own logged outcomes (no model, no API key)
+
+If you have run your own reading mechanisms on your own questions, MemSwap can choose between them by replay, exactly
+as in the paper. In short:
+
+1. Add one row per question and mechanism to `data/answers.csv`, with the question type, the judge's verdict (1 or 0)
+   and the memory tokens. The columns are described in [`data/README.md`](data/README.md).
+2. Register a new dataset in `evaluation.py`, or a new mechanism in `memswap/knowledge/knowledge_base.py`.
+3. Update `data/SHA256SUMS`, then run `python reproduce.py`. The paper's numbers now FAIL wherever your data changes a
+   decision, which is expected. The new results are in `results/replay.json` and `results/tables/`.
+
+[`docs/EXTEND.md`](docs/EXTEND.md) gives each step in detail. It covers adding a reading mechanism (section 1) or a
+dataset (section 2), and swapping the selection rule (section 3) or the planner (section 4).
+
+### 3. Put MemSwap in front of a live agent
+
+The managed system is your agent. It provides one function per reading mechanism, which answers a question and
+returns the memory tokens it spent, and a judge, which scores an answer on labelled questions. `memswap/live.py`
+profiles the mechanisms on a labelled batch, writes the Routing Table, and answers every later question with the
+mechanism of its question type:
+
+```python
+from memswap.knowledge.knowledge_base import AdaptationGoals
+from memswap.live import LiveMemSwap, Question
+
+mechanisms = {"single_lookup": my_lookup,          # each: question -> (answer, memory tokens)
+              "planned_read": my_planned_read,
+              "iterative_search": my_search}
+live = LiveMemSwap(mechanisms, judge=my_judge,     # judge: (question, answer) -> 1 or 0
+                   classify=my_question_classifier,  # question -> question type
+                   goals=AdaptationGoals(margin=0.01))
+live.labelled_batch(labelled_questions)           # Questions with a question type and a gold answer
+record = live.ask(Question("q1", "When did I place my last order?"))
+print(record["mechanism"], record["outcome"], record["tokens"])
+live.set_budget(3168)                             # a new token budget: the loop re-plans
+```
+
+This wiring is tested twice:
+- **Without a model.** `python live/example_mock.py` runs it with mock mechanisms and a mock judge, and `pytest` runs
+  the same example (`tests/test_live_wiring.py`).
+- **With the real mechanisms and model.** `python live/smoke_test.py` runs it with the paper's three mechanisms and
+  DeepSeek V4.1 Flash on five LoCoMo questions. Our run is recorded in
+  [`live/smoke_test_result.json`](live/smoke_test_result.json); see [`live/README.md`](live/README.md).
+
+The live wiring profiles labelled batches. The paper's configuration does not profile at runtime (profiling cap 0),
+and `LiveMemSwap` follows it. To add a mechanism beyond the three, see `docs/EXTEND.md`, section 1.
 
 ## Methodology
 
@@ -94,7 +159,8 @@ memswap_replication_public/
 │   ├── plan/                     Mechanism Selector, Plan Optimizer
 │   ├── execute/                  Plan Enactor
 │   ├── managed/                  Memory manager (Question Classifier, Router, reading mechanisms), memory store
-│   └── loop.py                   The MAPE-K loop in the order of Algorithm 1
+│   ├── loop.py                   The MAPE-K loop in the order of Algorithm 1
+│   └── live.py                   Wiring for a live agent: its mechanisms and judge, profiled and routed by the loop
 ├── checks/                       Letta without its empty answers, streams with predicted question types, timings
 ├── stats/verify_stats.py         Independent recomputation of the statistics
 ├── data/                         Logged answers, verdicts, tokens, streams and folds (see data/README.md)
@@ -102,7 +168,7 @@ memswap_replication_public/
 │   ├── paper_numbers.csv         Every number of the paper with its source key
 │   └── expected/                 The result files behind the paper, and the logged timings
 ├── notebooks/memswap_demo.ipynb  The paper's running example end to end
-├── live/                         The code that produced the logged answers (needs a model endpoint)
+├── live/                         Model-facing code: the mock and real live examples, and the code that produced data/
 ├── docs/EXTEND.md                How to add a mechanism, a dataset, a selection rule or a planner
 ├── tests/                        pytest
 └── figures/architecture.svg      The architecture figure
@@ -129,23 +195,7 @@ Python 3.12 on Linux, tested with the pinned versions in `requirements.txt`. All
 
 ## Paper Components and Modules
 
-| paper component (Fig. 1) | module |
-|---|---|
-| **Managing system** | |
-| Knowledge: Mechanism Profiles, Adaptation Goals, Routing Table | `memswap/knowledge/knowledge_base.py` |
-| Monitor: Usage Tracker | `memswap/monitor/usage_tracker.py` |
-| Monitor: Mechanism Evaluator | `memswap/monitor/mechanism_evaluator.py` |
-| Analyze: Workload Analyzer | `memswap/analyze/workload_analyzer.py` |
-| Analyze: Cost Analyzer | `memswap/analyze/cost_analyzer.py` |
-| Plan: Mechanism Selector (selection rule, Eq. 2) | `memswap/plan/mechanism_selector.py` |
-| Plan: Plan Optimizer (Eq. 3) | `memswap/plan/plan_optimizer.py` |
-| Execute: Plan Enactor (the `update` interface) | `memswap/execute/plan_enactor.py` |
-| the loop in the order of Algorithm 1 | `memswap/loop.py` |
-| **Managed system: LLM agent** | |
-| Memory manager: Question Classifier | `memswap/managed/memory_manager/question_classifier.py` |
-| Memory manager: Router | `memswap/managed/memory_manager/router.py` |
-| Memory manager: single lookup, planned read, iterative search | `memswap/managed/memory_manager/mechanisms/` |
-| Memory store | `memswap/managed/memory_store.py` |
+Each component of the architecture figure has its own module; the map is in [`memswap/README.md`](memswap/README.md).
 
 ## Outputs of `reproduce.py`
 
@@ -160,7 +210,7 @@ Python 3.12 on Linux, tested with the pinned versions in `requirements.txt`. All
 
 A run passes when (a) every number of the paper equals its recomputed value as printed, (b) every value of the three
 recomputed JSON files equals the one in `results/expected/`, and (c) `decisions.csv` equals the expected one.
-626 numbers are checked: 586 are recomputed and 40 are LOGGED. The LOGGED ones are the timings and
+463 numbers of the paper are checked: 444 are recomputed and 19 are LOGGED. The LOGGED ones are the timings and
 judge-token counts of RQ3. They were measured once on our machine (AMD Ryzen 5 9600X) and from our run logs, so they
 are read from `results/expected/logged/` and cannot be recomputed from `data/`. Three arithmetic checks tie them to
 the recomputed results (token savings, payback, profiling tokens).
@@ -181,7 +231,7 @@ It prints one line per value (ours, independent, match) and writes `results/stat
 experiments other than the main one it takes from our pipeline only which mechanism served each question
 (`results/decisions.csv`). Comparisons that average 200 random draws (random selection, budget-matched mixing) are
 not recomputed there; `reproduce.py` recomputes them with the fixed seed.
-It checks all 276 values only after a full `python reproduce.py` run; after `--fast` it checks 262, because
+It checks all 248 values only after a full `python reproduce.py` run; after `--fast` it checks 234, because
 `--fast` does not write the decisions of the streams with predicted question types.
 
 ## Data
@@ -251,11 +301,11 @@ rule or a different planner, and how to rerun `reproduce.py` on it.
 If you use this package, please cite:
 
 ```bibtex
-@inproceedings{memswap2026,
-  title     = {MemSwap: Architecting Self-Adaptive Memory for AI Agents},
-  author    = {TO BE FILLED IN},
-  booktitle = {Proceedings of the International Workshop on Agentic Engineering (AGENT 2026)},
-  year      = {2026}
+@misc{akshathala2026memswap,
+  title  = {MemSwap: Architecting Self-Adaptive Memory for AI Agents},
+  author = {Akshathala, Sreemaee and Vaidhyanathan, Karthik},
+  year   = {2026},
+  note   = {Under review}
 }
 ```
 
@@ -265,4 +315,4 @@ MIT for the code and our data (`LICENSE`). Third-party benchmark material keeps 
 
 ## Contact
 
-CONTACT_TO_FILL_IN
+Sreemaee Akshathala, sreemaee.akshathala@research.iiit.ac.in

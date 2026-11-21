@@ -80,6 +80,10 @@ def value(results, key, fmt):
         k1, k2 = [k.strip() for k in key.split("  /  ")]
         r = results.get(k1) / results.get(k2)
         return str(round(100 * (1 - r)) if fmt == "ratio_fewer_pct" else round(100 * r))
+    if fmt in ("diff_round_int", "diff_pct1"):                          # first key minus second key
+        k1, k2 = [k.strip() for k in key.split("  /  ")]
+        d = results.get(k1) - results.get(k2)
+        return f"{round(d):,}" if fmt == "diff_round_int" else f"{100 * d:.1f}"
     if fmt == "payback_range":
         ys = sorted(results.get(key.replace("*", d)) for d in ("locomo", "longmemeval_s_star", "longmemeval_r"))
         return f"{round(ys[0]):,} to {round(ys[2]):,}"

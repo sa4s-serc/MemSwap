@@ -109,7 +109,15 @@ over budget, and after a labelled batch when a budget is set; the Plan Enactor w
 
 ## 5. Running live
 
-`live/` holds the code that produced the logged answers. `live/run_mechanisms.sh` rebuilds the memory stores, runs
-the three mechanisms and both judges, and needs an OpenAI-compatible endpoint (`MEMSWAP_BASE_URL`,
-`MEMSWAP_API_KEY`). To connect a live mechanism to the loop, pass a `read` function that calls it and a judge
-instead of the lookup above. The loop itself does not change.
+`memswap/live.py` connects the loop to a live agent. You provide one function per reading mechanism,
+`question -> (answer, memory tokens)`, a judge, `(question, answer) -> 1 or 0`, and a Question Classifier,
+`question -> question type`. `LiveMemSwap.labelled_batch` runs every mechanism on the labelled questions and has the
+judge score them. `LiveMemSwap.ask` then answers each new question with the mechanism of its question type, and
+`LiveMemSwap.set_budget` re-plans. The keys of the mechanism functions are the names in `MECHANISMS`. To add a fourth
+mechanism, append its name there first, as in section 1.
+
+- `live/example_mock.py` shows the whole cycle with mock mechanisms and a mock judge, without a model.
+  `tests/test_live_wiring.py` runs it.
+- `live/smoke_test.py` runs the same cycle with the paper's three mechanisms and a real model on five LoCoMo questions.
+- `live/run_mechanisms.sh` is the full rerun that produced `data/`: it rebuilds the memory stores and runs every
+  mechanism and both judges on all datasets (it needs `MEMSWAP_BASE_URL` and `MEMSWAP_API_KEY`).

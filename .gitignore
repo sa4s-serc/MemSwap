@@ -15,3 +15,4 @@ results/tables/
 results/logged/
 .env
 results/time_components.json
+data/benchmarks/locomo10.json
