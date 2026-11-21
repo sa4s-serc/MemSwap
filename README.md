@@ -67,14 +67,14 @@ approach for managing memory in agentic AI systems.
 | RQ | Result | Where in this package |
 |---|---|---|
 | RQ1 | Matches fixed iterative search, the most accurate fixed mechanism, with 21–34% fewer memory tokens on all three datasets | `results/tables/`, `results/replay.json` |
-| RQ1 | Matches Mem0 with 7–24% fewer tokens and Letta with 74–83% fewer | `results/replay.json`, `results/letta_empty_answers.json` |
+| RQ1 | Is on par with Mem0 with 7–24% fewer tokens and Letta with 74–83% fewer | `results/replay.json`, `results/letta_empty_answers.json` |
 | RQ2 | 2.6 to 8.7 points more accurate than the best fixed mechanism that fits, at four of six token budgets on LoCoMo | `results/replay.json` (budgets) |
-| RQ2 | Keeps its accuracy when the workload shifts, while a fixed single lookup falls from 77% to 61% | `results/replay.json` (streams), `results/predicted_question_types.json` |
-| RQ3 | Under 10 ms and no tokens per question on the request path; profiling is repaid after 756 to 7,541 served questions | `results/expected/logged/` |
+| RQ2 | Maintains its accuracy when the workload shifts, while a fixed single lookup falls from 77% to 61% | `results/replay.json` (streams), `results/predicted_question_types.json` |
+| RQ3 | Under 10 ms and no tokens per question; MemSwap recovers the cost of profiling after 756 to 7,541 answered questions | `results/expected/logged/` |
 
 ## Using MemSwap
 
-There are three ways to use this package, from checking the paper to running MemSwap in front of your own agent.
+There are three ways to use this package, from checking the paper to running MemSwap on top of your own agent.
 
 ### 1. Reproduce the paper (no model, no API key)
 
@@ -98,7 +98,7 @@ as in the paper. In short:
 [`docs/EXTEND.md`](docs/EXTEND.md) gives each step in detail. It covers adding a reading mechanism (section 1) or a
 dataset (section 2), and swapping the selection rule (section 3) or the planner (section 4).
 
-### 3. Put MemSwap in front of a live agent
+### 3. Run MemSwap on top of a live agent
 
 The managed system is your agent. It provides one function per reading mechanism, which answers a question and
 returns the memory tokens it spent, and a judge, which scores an answer on labelled questions. `memswap/live.py`
