@@ -22,7 +22,7 @@ run_dataset() {   # $1 = benchmark file in LoCoMo shape, $2 = store dir, $3 = co
 }
 
 python live/download_locomo.py                                   # LoCoMo (CC BY-NC 4.0), checksum-verified
-(cd data/benchmarks && sha256sum -c SHA256SUMS)                       # shipped LongMemEval-S* and LongMemEval-R (MIT)
+(cd data && sha256sum -c SHA256SUMS)                       # shipped LongMemEval-S* and LongMemEval-R (MIT)
 python live/prepare_lme_s_star.py data/benchmarks/lme_s_star.json data/benchmarks/lme_s_star_locomo.json
 python live/prepare_lme_s_star.py data/benchmarks/lme_r.json      data/benchmarks/lme_r_locomo.json
 

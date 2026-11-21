@@ -11,7 +11,12 @@ answer_question call. Changed, as the paper states: their `search_files` tool is
 the agent type is memgpt_v2_agent; the model is DeepSeek V4.1 Flash (reasoning off) instead of gpt-4o-mini;
 embeddings are bge-small-en-v1.5 instead of text-embedding-3-large; sessions are sorted numerically.
 Set LETTA_DATA to a benchmark file in LoCoMo shape to run it on LongMemEval-S*. Clone letta-ai/letta-leaderboard
-into external/ first. Output: runtime/letta/predictions.jsonl."""
+at the commit we used into live/baselines/external/ first:
+
+  git clone https://github.com/letta-ai/letta-leaderboard live/baselines/external/letta-leaderboard
+  git -C live/baselines/external/letta-leaderboard checkout 802a794263279839f9384bfd518ca9da3d059d37
+
+Output: runtime/letta/predictions.jsonl."""
 from __future__ import annotations
 
 import argparse

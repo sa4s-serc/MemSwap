@@ -36,7 +36,7 @@ Z_DISAGREEMENTS = {"count": 0, "total_rule_calls": 0, "examples": []}
 
 
 def select(k, n, tok, margin, context=None):
-    """Selection rule (Definition 4/5, spec section 9).
+    """Selection rule (Eq. 2 of the paper).
 
     k[m]   : number of correct answers of mechanism m on the profiled questions
     n      : number of profiled questions (same for every mechanism)

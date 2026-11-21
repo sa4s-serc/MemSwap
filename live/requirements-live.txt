@@ -5,3 +5,4 @@ torch==2.14.1
 transformers==5.19.0
 tiktoken==0.14.0
 numpy==2.5.4
+mem0ai==2.2.1          # the Mem0 baseline (live/baselines/mem0_*.py)

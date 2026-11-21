@@ -134,7 +134,7 @@ def main():
     ap.add_argument("--max-steps", type=int, default=8)
     ap.add_argument("--max-questions", type=int, default=None)
     ap.add_argument("--qids", default=None)
-    ap.add_argument("--model", default="glm-5.3-flash")
+    ap.add_argument("--model", default="deepseek-v4.1-flash")
     ap.add_argument("--out", default="agent", help="runtime/<out>/<cond>/predictions.jsonl")
     a = ap.parse_args()
     load_env()

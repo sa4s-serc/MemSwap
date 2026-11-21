@@ -53,7 +53,7 @@ class Mem0LocalClient:
 
     def __init__(self, project: str, proxy_url: str = "http://127.0.0.1:8787/v1", llm_model: str = "deepseek", **_: Any):
         self.root = HERE / "runtime" / "mem0_stores" / project
-        self.proxy_url, self.llm_model = os.environ.get("MEM0_PROXY_URL", proxy_url), os.environ.get("MEM0_LLM_MODEL", llm_model)   # MEM0_PROXY_URL: an OpenAI-compatible endpoint on 8789   # e.g. glm-5.3-flash through the proxy
+        self.proxy_url, self.llm_model = os.environ.get("MEM0_PROXY_URL", proxy_url), os.environ.get("MEM0_LLM_MODEL", llm_model)   # MEM0_PROXY_URL: an OpenAI-compatible endpoint; MEM0_LLM_MODEL: the model it serves, e.g. deepseek-v4.1-flash
         self.mems: dict[str, Any] = {}
         self.locks: dict[str, asyncio.Lock] = {}
         os.environ.setdefault("MEM0_TELEMETRY", "False")

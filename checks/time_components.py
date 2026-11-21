@@ -92,7 +92,7 @@ from sentence_transformers import SentenceTransformer             # noqa: E402
 import torch                                                      # noqa: E402
 
 TEXTS = json.load(open(os.path.join(DATA, "q_texts.json")))
-_z = np.load(os.path.join(DATA, "q_emb.npz"), allow_pickle=True)
+_z = np.load(os.path.join(DATA, "q_emb.npz"), allow_pickle=False)
 EMB = {str(i): e for i, e in zip(_z["ids"], _z["emb"])}
 enc = SentenceTransformer("BAAI/bge-small-en-v1.5", device="cpu")
 out["c_classifier"] = {"torch_threads": torch.get_num_threads()}

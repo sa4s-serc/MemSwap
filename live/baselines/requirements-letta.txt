@@ -1,0 +1,8 @@
+# the Letta baseline (live/baselines/letta_*.py), as we ran it, in its own environment, python 3.12.
+# Letta ran with openai 2.36.0 and numpy 2.4.4, which differ from live/requirements-live.txt, so keep it separate:
+#   python3.12 -m venv .venv-letta && .venv-letta/bin/pip install -r live/baselines/requirements-letta.txt
+letta==0.16.8
+letta-client==1.10.3
+pgserver==0.1.4
+openai==2.36.0
+numpy==2.4.4

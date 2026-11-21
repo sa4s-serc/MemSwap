@@ -23,6 +23,26 @@ pip install -r requirements.txt -r live/requirements-live.txt
 export MEMSWAP_BASE_URL=<an OpenAI-compatible endpoint>  MEMSWAP_API_KEY=<your key>   # or put them in .env
 ```
 
+The Letta baseline needs its own environment (`live/baselines/requirements-letta.txt`), because Letta 0.16.8 ran with
+other versions of openai and numpy.
+
+## Model endpoints and ports
+
+Every script talks to the answer model through an OpenAI-compatible endpoint. We ran all model calls through a small
+local proxy that forwarded them to OpenRouter (DeepSeek V4.1 Flash), mapped model names and logged token usage and
+cost. **That proxy is not shipped**: it held our API keys and spending limits. Any OpenAI-compatible endpoint that
+serves the answer model works in its place. Point each script at it:
+
+| script | how it finds the endpoint | default in the code | what we used |
+|---|---|---|---|
+| `store.py`, `mechanisms.py`, `judge.py`, `smoke_test.py` | `MEMSWAP_BASE_URL`, `MEMSWAP_API_KEY` | none (must be set) | the proxy on port 8789 |
+| `baselines/mem0_lme.py`, `baselines/mem0_local_client.py` | `MEM0_PROXY_URL`, `MEM0_LLM_MODEL` | `http://localhost:8000/v1` (`mem0_lme.py`), `http://127.0.0.1:8787/v1` (`mem0_local_client.py`) | the proxy on port 8789 |
+| `baselines/letta_server.py` | `--proxy` (the model endpoint), `--port` (the Letta server) | `--proxy http://localhost:8000/v1`, `--port 8283` | `--proxy http://127.0.0.1:8789/v1 --port 8285` |
+| `baselines/letta_locomo.py` | `--base-url` (the Letta server) | `http://127.0.0.1:8283` | `--base-url http://127.0.0.1:8285`, the server started by `letta_server.py` |
+
+The ports 8000, 8787 and 8789 are only placeholders for your own model endpoint; nothing in the package listens on
+them. Port 8283 (or 8285, as we ran it) is the Letta server that `letta_server.py` starts.
+
 ## Smoke test
 
 `python live/smoke_test.py` builds the memory store of one LoCoMo conversation (conv-30, 19 sessions). It profiles a

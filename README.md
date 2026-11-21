@@ -23,7 +23,7 @@ Software Engineering Research Center (SERC), IIIT Hyderabad, India
 This repository rebuilds every table and number of the paper from the logged outcomes of the experiments, without
 model calls and without an API key. Every mechanism answered every question once, two LLM judges scored every answer,
 and the package replays the architecture over these outcomes, so the whole reproduction is deterministic and takes
-about 2 minutes.
+about 3 minutes.
 
 <p align="center">
   <img src="figures/architecture.svg" alt="The MemSwap architecture" width="95%">
@@ -62,15 +62,19 @@ approach for managing memory in agentic AI systems.
 
 ## Results at a Glance
 
-"Matches" means that neither judge finds MemSwap significantly less accurate (exact McNemar test, p < 0.05).
+"Is on par with" means that neither judge finds MemSwap significantly less accurate (exact McNemar test, p < 0.05).
 
 | RQ | Result | Where in this package |
 |---|---|---|
-| RQ1 | Matches fixed iterative search, the most accurate fixed mechanism, with 21–34% fewer memory tokens on all three datasets | `results/tables/`, `results/replay.json` |
-| RQ1 | Is on par with Mem0 with 7–24% fewer tokens and Letta with 74–83% fewer | `results/replay.json`, `results/letta_empty_answers.json` |
-| RQ2 | 2.6 to 8.7 points more accurate than the best fixed mechanism that fits, at four of six token budgets on LoCoMo | `results/replay.json` (budgets) |
-| RQ2 | Maintains its accuracy when the workload shifts, while a fixed single lookup falls from 77% to 61% | `results/replay.json` (streams), `results/predicted_question_types.json` |
+| RQ1 | Is on par with fixed iterative search, the most accurate fixed mechanism, with 21–34% fewer memory tokens on all three datasets | `results/expected/replay.json` |
+| RQ1 | Is on par with Mem0 with 7–24% fewer tokens and Letta with 74–83% fewer | `results/expected/replay.json`, `results/expected/letta_empty_answers.json` |
+| RQ2 | 2.6 to 8.7 points more accurate than the best fixed mechanism that fits, at four of six token budgets on LoCoMo | `results/expected/replay.json` (budgets) |
+| RQ2 | Maintains its accuracy when the workload shifts, while a fixed single lookup falls from 77% to 61% | `results/expected/replay.json` (streams), `results/expected/predicted_question_types.json` |
 | RQ3 | Under 10 ms and no tokens per question; MemSwap recovers the cost of profiling after 756 to 7,541 answered questions | `results/expected/logged/` |
+
+The files under `results/expected/` are the committed copies of the results behind the paper. A run of
+`python reproduce.py` writes `results/replay.json`, `results/tables/` and the other result files next to them, and
+compares them with `results/expected/`.
 
 ## Using MemSwap
 
@@ -79,7 +83,7 @@ There are three ways to use this package, from checking the paper to running Mem
 ### 1. Reproduce the paper (no model, no API key)
 
 ```bash
-python reproduce.py            # every table and number of the paper, PASS / FAIL per number, about 2 minutes
+python reproduce.py            # every table and number of the paper, PASS / FAIL per number, about 3 minutes
 ```
 
 See [Reproducing the Results](#reproducing-the-results) for the other checks.
@@ -140,14 +144,16 @@ and `LiveMemSwap` follows it. To add a mechanism beyond the three, see `docs/EXT
    DeepSeek V4.1 Flash and gpt-oss-120b, scored the answers with the same prompt; the answers to the LongMemEval-S* questions with no answer in memory are
    labelled by hand against one rule (`data/README.md`). Token counts are the input tokens reported by the model endpoint.
 3. **Replay.** MemSwap runs over these outcomes with leave-one-conversation-out folds, an accuracy margin of one point
-   and a profiling cap of zero, under six token budgets per dataset, a budget drop, and five workload streams.
+   and a profiling cap of zero, under six token budgets per dataset, a budget drop, and five workload streams. The main
+   results route each question by its benchmark question-type label; routing by question types that the Question
+   Classifier predicts is a secondary check (`checks/predicted_question_types.py`).
 4. **Statistics.** Paired comparisons use the exact McNemar test; the selection rule uses a one-sided 95% Wilson lower
    bound. `stats/verify_stats.py` recomputes the statistics independently of our code.
 
 ## Repository Structure
 
 ```
-memswap_replication_public/
+MemSwap/
 ├── reproduce.py                  ★ One command: rebuilds every result and checks every number of the paper
 ├── replay.py                     The experiment protocols: folds, budgets, drop scenario, streams
 ├── evaluation.py                 Data loading, baselines and statistics
@@ -183,7 +189,7 @@ pip install -r requirements.txt
 
 | Step | Command | Output | Time |
 |---|---|---|---|
-| All results, every number checked | `python reproduce.py` | `results/report.md`, `results/*.json`, `results/tables/` | about 2 min |
+| All results, every number checked | `python reproduce.py` | `results/report.md`, `results/*.json`, `results/tables/` | about 3 min |
 | Faster run, without the predicted-type streams | `python reproduce.py --fast` | as above | about 1.5 min |
 | Statistics, independently of our code | `python stats/verify_stats.py` | `results/stats_verification.csv` | about 3 s |
 | Unit tests and data checks | `pytest` | | about 2 s |
@@ -213,7 +219,8 @@ recomputed JSON files equals the one in `results/expected/`, and (c) `decisions.
 463 numbers of the paper are checked: 444 are recomputed and 19 are LOGGED. The LOGGED ones are the timings and
 judge-token counts of RQ3. They were measured once on our machine (AMD Ryzen 5 9600X) and from our run logs, so they
 are read from `results/expected/logged/` and cannot be recomputed from `data/`. Three arithmetic checks tie them to
-the recomputed results (token savings, payback, profiling tokens).
+the recomputed results (the token savings, the number of answered questions after which MemSwap recovers the cost of
+profiling, and the profiling tokens).
 
 Key names that start with memswitch refer to MemSwap. `paper_numbers.py` maps every number to its key.
 
@@ -247,6 +254,18 @@ Licences: our code and our logged outcomes are MIT. LoCoMo question texts are CC
 LongMemEval and MemoryAgentBench material is MIT. Details and attributions are in `DATA_LICENSES.md`. The LoCoMo
 conversations are not shipped; `live/download_locomo.py` downloads them from the original repository at a pinned
 commit and checks their checksum.
+
+### Rebuilding LongMemEval-R
+
+The package ships `data/benchmarks/lme_r.json`. To rebuild it from LongMemEval, download `longmemeval_oracle.json`
+(MIT), check it is the file we used, and run `live/prepare_lme_r.py`:
+
+```bash
+curl -L -o data/benchmarks/longmemeval_oracle.json \
+  https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/main/longmemeval_oracle.json
+echo "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c  data/benchmarks/longmemeval_oracle.json" | sha256sum -c
+python live/prepare_lme_r.py
+```
 
 ## Details of the reading mechanisms
 

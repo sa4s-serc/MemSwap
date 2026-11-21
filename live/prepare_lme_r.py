@@ -1,7 +1,13 @@
 """LongMemEval-R: the 200 LongMemEval questions that are not in MemoryAgentBench's S* subset, packed into
 dialogues the way S* is packed. The package ships its output (data/benchmarks/lme_r.json); this script documents how it was
 built and needs LongMemEval's longmemeval_oracle.json (MIT, https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned).
-Convert the output to the LoCoMo shape with prepare_lme_s_star.py.
+Download it from the package root, and check that it is the file we used:
+
+  curl -L -o data/benchmarks/longmemeval_oracle.json \
+    https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/main/longmemeval_oracle.json
+  echo "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c  data/benchmarks/longmemeval_oracle.json" | sha256sum -c
+
+Then run python live/prepare_lme_r.py. Convert the output to the LoCoMo shape with prepare_lme_s_star.py.
 input: data/benchmarks/longmemeval_oracle.json (LongMemEval, 500 questions, evidence sessions only) and
        data/benchmarks/lme_s_star.json (the 300 S* questions, matched by question text)
 output: data/benchmarks/lme_r.json (S* shape)

@@ -12,7 +12,7 @@ AGENT_MODE selects the mechanism: prune = iterative search with context pruning 
 AGENT_PRUNE_HEAD = 300 characters; the paper's iterative search); full = iterative search without pruning (the paper's
 reference row); plan = planned read (one planning call, the reads without the model, one answer call with the shared
 prompt). The paper uses --cond agent_both, AGENT_FACTS=own, at most 8 steps, temperature 0.
-The Mem0 branch of search_facts (AGENT_FACTS unset) is an earlier variant and is not used in the paper.
+With AGENT_FACTS unset, search_facts reads a Mem0 store instead of our fact store; the paper sets AGENT_FACTS=own.
 output: runtime/<out>/<cond>/predictions.jsonl, one row per question with the answer, memory tokens, steps and tool trace.
 """
 from __future__ import annotations
@@ -37,7 +37,7 @@ SKIP_CAT = int(os.environ.get("AGENT_SKIP_CAT", "5"))
 RUNTIME = ROOT / "runtime"
 ENV = ROOT / ".env"                                       # optional, see store.py
 ORDER = ["conv-26", "conv-30", "conv-41", "conv-42", "conv-43", "conv-44", "conv-47", "conv-48", "conv-49", "conv-50"]
-MEM0_PROJECT = os.environ.get("AGENT_MEM0_PROJECT", "mem0_store")   # the Mem0 stores to read (earlier variant, not used in the paper)
+MEM0_PROJECT = os.environ.get("AGENT_MEM0_PROJECT", "mem0_store")   # the Mem0 stores that search_facts reads when AGENT_FACTS is unset
 MEM0_PRED_DIR = RUNTIME / os.environ.get("AGENT_MEM0_PRED_DIR", "mem0/predicted")   # where the harness wrote _ingestion_*.json (user ids)
 OWN_FACTS = os.environ.get("AGENT_FACTS") == "own"   # search_facts reads OUR fact store (own_store.py) instead of Mem0's
 MODE = os.environ.get("AGENT_MODE", "full")   # full = re-send every tool result at every step; prune = keep only the latest step's tool results in full,
@@ -283,7 +283,7 @@ def main():
     ap.add_argument("--max-steps", type=int, default=8)
     ap.add_argument("--max-questions", type=int, default=None)
     ap.add_argument("--qids", default=None)
-    ap.add_argument("--model", default="glm-5.3-flash")
+    ap.add_argument("--model", default="deepseek-v4.1-flash")
     ap.add_argument("--out", default="agent", help="runtime/<out>/<cond>/predictions.jsonl")
     a = ap.parse_args()
     load_env()

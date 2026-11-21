@@ -20,8 +20,18 @@ judge scored each answer once.
 | `memory_tokens` | input tokens that the system sent to the model over all its calls for this question, as reported by the model endpoint |
 | `steps` | iterative search only: number of loop steps (at most 8) |
 
-Mem0 and Letta were not run on LongMemEval-R. Letta left 51 LoCoMo answers and 46 LongMemEval-S* answers empty; they
-count as wrong. One LongMemEval-S* question of the 300 is left out because the primary judge gave no verdict for
+Mem0 and Letta were not run on LongMemEval-R.
+
+Empty answers. Some runs returned no answer text. Every empty answer counts as wrong under both judges:
+
+| system | LoCoMo | LongMemEval-S* |
+|---|---|---|
+| iterative search | 1 | 1 |
+| iterative search without context pruning | 6 | 0 |
+| Letta | 51 | 46 |
+
+Three Letta rows also have `memory_tokens` = 0 (two on LoCoMo, one on LongMemEval-S*). They are among Letta's empty
+answers above, and all three are scored wrong under both judges. One LongMemEval-S* question of the 300 is left out because the primary judge gave no verdict for
 Mem0's answer to it.
 
 ## answer_texts.jsonl

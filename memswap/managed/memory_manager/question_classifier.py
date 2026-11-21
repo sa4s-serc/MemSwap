@@ -1,9 +1,8 @@
-"""Execute: Question Classifier, classify : Q -> T. A logistic regression over the question's tf-idf n-grams and its
-embedding, trained on the labelled profiling questions.
+"""Memory manager: Question Classifier, classify : Q -> T. A logistic regression over the question's tf-idf n-grams and
+its embedding, trained on the labelled profiling questions.
 
-fit_predict is copied unchanged from the original analysis script type_classifier_nonllm.py, lines 36 to 49 (the classifier behind
-the "with predicted types" row of Table II). The question embeddings (bge-small-en-v1.5) and texts are read from
-data/q_emb.npz and data/q_texts.json, as that script read them from its own folder.
+fit_predict is the classifier behind the "with predicted types" row of Table II. The question embeddings
+(bge-small-en-v1.5) and texts are read from data/q_emb.npz and data/q_texts.json.
 
 For replays that route by the benchmark label (the paper's main results), LabelTypes stands in for the classifier.
 """
@@ -19,7 +18,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "data")
-_z = np.load(os.path.join(DATA, "q_emb.npz"), allow_pickle=True)
+_z = np.load(os.path.join(DATA, "q_emb.npz"), allow_pickle=False)
 EMB = {str(i): e for i, e in zip(_z["ids"], _z["emb"])}
 TEXTS = json.load(open(os.path.join(DATA, "q_texts.json")))
 

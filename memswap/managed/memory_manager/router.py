@@ -1,4 +1,4 @@
-"""Execute: Router. The entry of MemSwap: reads the store with R(classify(q)) and returns the answer to the agent.
+"""Memory manager: Router. The entry of MemSwap: reads the store with R(classify(q)) and returns the answer to the agent.
 
 `read` is the mechanism call. In this package's replay it returns the logged outcome of that mechanism on the
 question (its verdict and memory tokens); a live system passes the functions of memswap/managed/memory_manager/mechanisms/.
